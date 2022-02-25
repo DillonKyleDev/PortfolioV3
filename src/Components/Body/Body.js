@@ -150,7 +150,7 @@ function Body() {
             description={"A professional art portfolio made to client specification using React Bootstrap. Features a behind the scenes login for the owner to upload and edit portfolio images. Live site unavailable per request of client and due to the nature of the content."} 
             tags={["React", "JavaScript", "HTML/CSS", "Bootstrap", "Responsive", "MongoDB", "Node.js", "Express", "Authentication"]}
             githubLink={'https://github.com/DillonKyleDev/DarianPortfolio'}
-            liveSiteLink={'f'}/>
+            liveSiteLink={''}/>
           </div>
 
           <div className='project fourth-project'>
@@ -174,8 +174,8 @@ function Body() {
             title={"Portfolio Version 1.0"} 
             description={"This is my first Front-end Web Development portfolio. It was made using vanilla JavaScript, HTML and CSS, and showcases some of my early learning."} 
             tags={["JavaScript", "HTML/CSS", "Responsive", "Node.js", "Express"]}
-            githubLink={'https://github.com/DillonKyleDev/Portfolio'}
-            liveSiteLink={'https://www.dillonkyleportfolio.com/'}/>
+            githubLink={'https://github.com/DillonKyleDev/PortfolioV1'}
+            liveSiteLink={'https://portfolioversion1.herokuapp.com/'}/>
           </div>
 
           <div className='project fifth-project'>
