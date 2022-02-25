@@ -84,7 +84,7 @@ function About() {
                 <IoIosColorPalette  size={100} className='about-icon'/>
               </div>
               <h1 className='section-title'>Design</h1>
-              <p>Who says performant can't also be beautiful? I can turn any concept, i.e. <a className="about-link" href="www.figma.com" target="_blank" rel="noreferrer" alt="Figma">Figma</a>, into a beautiful and fully realized UI.</p>
+              <p>Who says performant can't also be beautiful? I can turn any concept, i.e. <a className="about-link" href="https://www.figma.com/" target="_blank" rel="noreferrer" alt="Figma">Figma</a>, into a beautiful and fully realized UI.</p>
             </section>
             <section>
               <div className='hex-container'>
