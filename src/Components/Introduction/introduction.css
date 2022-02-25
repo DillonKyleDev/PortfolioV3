@@ -4,5 +4,6 @@
 }
 
 #full-name {
-  color: rgb(185, 0, 93);
+  text-decoration: underline;
+  text-decoration-color: rgb(185, 0, 93);
 }

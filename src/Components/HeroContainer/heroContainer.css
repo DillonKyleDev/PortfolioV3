@@ -1,11 +1,15 @@
 .hero-container {
-  position: absolute;
+  position: relative;
   width: 100%;
-  height: max-content;
+  height: 100vh;
   top: 0;
+  z-index: 12;
 }
 
 .hero-margins {
+  position: absolute;
+  width: 100%;
+  bottom: 30%;
   display: flex;
   flex-direction: column;
   justify-content: center;

@@ -11,7 +11,6 @@ function HeroContainer() {
   return (
     <div>
       <div id="hero" className='hero-container'>
-        <div className='hero-margins'>
           <Wave
           d={D} 
           width={'calc(106% + 1.3px)'} 
@@ -23,6 +22,7 @@ function HeroContainer() {
           left={'0'}
           duration={20} 
           position={'absolute'}/>
+        <div className='hero-margins'>
           <ProfilePicture />
           <Introduction />
           <MyWorkButton />

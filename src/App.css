@@ -187,3 +187,9 @@ a {
     min-height: 200px !important;
   }
 }
+
+@media (max-height: 800px) {
+  .hero-margins {
+    bottom: 15% !important;
+  }
+}
