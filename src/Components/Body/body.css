@@ -82,10 +82,12 @@
 }
 
 .first-project {
+  background-color: rgb(31,31,50);
   position: relative;
-  z-index: 1;
+  z-index: 0;
   padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding-bottom: 10rem;
+  margin-bottom: -8rem;
 }
 
 .second-project {
