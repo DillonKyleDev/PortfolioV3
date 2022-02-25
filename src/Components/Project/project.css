@@ -1,0 +1,73 @@
+.project-container {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+}
+
+.project-info {
+  width: 100%;
+  position: relative;
+  height: max-content;
+  padding-bottom: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.project-text {
+  width: 400px;
+}
+
+.project-title {
+  line-height: 2;
+  text-decoration: underline;
+  margin-top: -2rem;
+}
+
+.tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.tag-list-item {
+  display: inline;
+  border: solid rgb(185, 0, 93) 1px;
+  color: white;
+  border-radius: 4px;
+  width: min-content;
+  margin: 0.3rem;
+  padding: 0.2rem 0.3rem;
+  white-space: nowrap;
+}
+
+.project-link {
+  margin: 0.5rem;
+}
+
+.link-button {
+  display: flex;
+  align-items: center;
+  border: solid white 1px;
+  color: white;
+  background-color: rgba(0,0,0,0);
+  cursor: pointer;
+
+  padding: 0.5rem 0.75rem;
+  transition: background-color 0.4s, border 0.4s;
+}
+
+.link-button:hover {
+  background-color: rgb(0, 176, 189);
+}
+
+.link-icon {
+  margin-right: 0.5rem;
+}
+
+.new-tab {
+  margin-left: 0.5rem;
+}

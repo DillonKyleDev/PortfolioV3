@@ -1,0 +1,45 @@
+.profile-circle {
+  background-color: black;
+  width: 200px;
+  height: 200px;
+  border-radius: 200px;
+  overflow: hidden;
+}
+
+.image-circle {
+  background-image: url('../../assets/TablePhoto.jpg');
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 150%;
+  height: 150%;
+  position: relative;
+  right: 2.6rem;
+  transition: background-color 0.2s;
+}
+
+.outer-parent {
+  position: relative;
+  margin: 0;
+  transition: margin 0.2s;
+  transition-timing-function: ease;
+  z-index: 6;
+}
+
+.outer-parent:hover .outer-circle {
+  padding: 0rem;
+  margin: 1rem;
+  background-color: white;
+}
+
+.outer-parent:hover {
+  margin: 1rem;
+}
+
+.outer-circle {
+  border: solid white 3px;
+  border-radius: 200px;
+  padding: 1rem;
+  transition: padding 0.2s, margin 0.2s, background-color 0.2s;
+  transition-timing-function: ease;
+}

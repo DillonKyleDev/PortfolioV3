@@ -1,0 +1,253 @@
+.about-section-background {
+  background-color: #3f126a;
+  position: relative;
+  z-index: 0;
+}
+
+.about-section-container {
+  background-color: #17092c;
+  position: relative;
+  z-index: 1;
+  margin-top: -1px;
+}
+
+.about {
+  background-color: #17092c;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-underline {
+  background-color: white;
+  height: 2px;
+  width: 5rem;
+  margin-top: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.about-text {
+  background-color: #17092c;
+  color: white;
+  margin: 0;
+  padding-top: 3rem;
+  font-weight: 900;
+}
+
+.bio-container {
+  background-color: #17092c;
+}
+
+.bio-text {
+  text-align: justify;
+  background-color: #17092c;
+  margin: auto; 
+  color: white;
+  width: 60%;
+}
+
+.bio-text p {
+  font-size: 1.1rem;
+  margin: 0;
+  padding: 1rem 0rem;
+}
+
+.priorities-container {
+  width: 100%;
+  background-color: #17092c;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.hex-break {
+  width: 50%;
+  display: flex;
+}
+.hex-left {
+  justify-content: flex-end;
+}
+.hex-right {
+  justify-content: flex-start;
+}
+
+section {
+  margin: 5%;
+  width: 10rem;
+  color: white;
+  background-color: none;
+  padding: 1.5rem;
+  min-height: 330px;
+  position: relative;
+  z-index: 1;
+}
+
+.hex-container {
+  position: relative;
+}
+
+.hexagon {
+  color: white;
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  min-width: 8rem;
+}
+
+.about-icon {
+  position: absolute;
+  right: 1.9rem;
+  bottom: 3.5rem;
+  z-index: 2;
+  color: rgb(185, 0, 93);
+}
+
+.section-title {
+  text-decoration: underline;
+  margin-top: 0.5rem;
+}
+
+.divider-container {
+  margin-top: 3rem;
+  background-color: #17092c;
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+.divider-1 {
+  background-color: white;
+  height: 2px;
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+  width: 10rem;
+  transform: rotate(10deg);
+  position: relative;
+  right: -1px;
+}
+
+.divider-2 {
+  background-color: white;
+  height: 2px;
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+  width: 10rem;
+  transform: rotate(-10deg);
+  position: relative;
+  left: -1px;
+}
+
+.into-projects-wave {
+  background-image: url('../../assets/IntoProjects.svg');
+  aspect-ratio: 1600/400;
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  bottom: 0;
+}
+
+section p {
+  text-align: justify;
+  position: absolute;
+  font-size: 1.1rem;
+  right: -1rem;
+  width: 110%;
+}
+
+.about-link {
+  color: rgb(185, 0, 93);
+  font-weight: bold;
+  text-decoration: underline;
+  text-decoration-color: transparent;
+  transition: text-decoration-color 0.2s;
+}
+
+.about-link:hover {
+  text-decoration-color: rgb(185, 0, 93);
+}
+
+.animation {
+  font-size: 1.1rem;
+  padding: 0;
+  font-weight: bold;
+  border: none;
+  background-color: rgba(0,0,0,0);
+  color: rgb(185, 0, 93);
+  cursor: pointer;
+  text-decoration: underline;
+  text-decoration-color: transparent;
+  transition: text-decoration-color 0.2s, transform 1s;
+}
+
+.animation:hover {
+  text-decoration-color: rgb(185, 0, 93);
+}
+
+.animation:focus {
+  transform: rotate(360deg);
+  text-decoration: underline;
+}
+
+.interaction {
+  font-size: 1.1rem;
+  padding: 0;
+  font-weight: bold;
+  border: none;
+  background-color: #230a3b;
+  color: rgb(185, 0, 93);
+  cursor: pointer;
+  transition: background-color 0.4s, border 0.4s;
+}
+
+.interaction:hover {
+  background-color: rgb(0, 176, 189);
+}
+
+.interaction:focus {
+  background-color: rgb(0, 238, 255);
+  color: #230a3b;
+}
+
+.about-wave-container {
+  position: relative;
+  height: 2000px;
+  width: 100%;
+  overflow: hidden;
+  background-color: #11111d;
+  margin-bottom: -1750px;
+}
+
+.first-triangle {
+  position: absolute;
+  top: 350px;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  z-index: 1;
+  filter: drop-shadow(3px 2px 150px rgb(0 0 0 / 0.5));
+}
+.first-triangle svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 1400px;
+}
+.first-triangle .shape-fill {
+  fill: #19192B;
+}
+
+
+.about-wave {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}

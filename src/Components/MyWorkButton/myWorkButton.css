@@ -1,0 +1,26 @@
+#my-work-button {
+  border: solid white 1px;
+  color: white;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  background-color: rgba(0, 0, 0, 0);
+  cursor: pointer;
+  transition: background-color 0.4s, border 0.4s;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+#my-work-button:hover {
+  border: solid rgb(0, 176, 189) 1px;
+  background-color: rgb(0, 176, 189);
+  color: white;
+}
+#my-work-button:hover .arrow-icon {
+  transform: rotate(90deg);
+}
+
+.arrow-icon {
+  margin-left: 0.3rem;
+  transition: transform 0.4s;
+}

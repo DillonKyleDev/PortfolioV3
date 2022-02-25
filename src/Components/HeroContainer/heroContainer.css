@@ -1,0 +1,15 @@
+.hero-container {
+  position: absolute;
+  width: 100%;
+  height: max-content;
+  top: 0;
+}
+
+.hero-margins {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 15rem;
+}

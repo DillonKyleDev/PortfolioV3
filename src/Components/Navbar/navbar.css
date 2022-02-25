@@ -1,0 +1,73 @@
+.navbar {
+  width: 80px;
+  background-color: rgb(9, 9, 15);
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  height: 100%;
+  z-index: 5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.icon-container {
+  margin-top: 1rem;
+  border-radius:  50%;
+}
+.icon {
+  color: white;
+  background-color: rgb(26, 26, 44);
+  border-radius:  50%;
+  border: solid rgb(185, 0, 93) 1px;
+  width: max-content;
+  height: max-content;
+  padding: 0.5rem;
+  padding-bottom: 0.2rem;
+  cursor: pointer;
+}
+
+.image {
+  transition: color 0.4s, transform 0.4s;
+}
+
+.deselected:hover .image {
+  color:rgb(255, 66, 161);
+  transform: rotate(10deg);
+}
+
+.about-me {
+  padding: 0.7rem;
+  padding-bottom: 0.4rem;
+}
+
+button {
+  transition: transform 0.8s;
+  transition-timing-function: ease;
+}
+.selected {
+  transform: rotatey(360deg);
+  color: rgb(185, 0, 93);
+  border: solid white 1px;
+  background-color: white;
+}
+.deselected {
+  transition: transform 1.5s 0.2s;
+  transition-timing-function: ease;
+}
+
+a {
+  display: inline-block;
+  border-radius: 50%;
+}
+
+.wave-toggle {
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 1rem;
+}
+
+.wave-toggle-button svg {
+  position: relative;
+  bottom: 0.2rem;
+}

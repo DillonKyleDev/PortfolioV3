@@ -1,0 +1,9 @@
+.content {
+  position: absolute;
+  width: calc(100% - 80px);
+  right: 0;
+  margin: 0;
+  margin-left: 80px;
+  z-index: 0;
+  overflow: hidden;
+}

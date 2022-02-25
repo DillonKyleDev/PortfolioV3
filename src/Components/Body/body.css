@@ -1,0 +1,162 @@
+.body-container {
+  width: 100%;
+  position: relative;
+  padding-top: 8rem;
+  z-index: 0;
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.projects-text {
+  margin: 0;
+  color: white;
+}
+
+.projects-underline {
+  background-color: white;
+  height: 2px;
+  width: 5rem;
+  margin-top: 1.5rem;
+  margin-bottom: 6rem;
+}
+
+.top-wave {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+.top-wave svg {
+  position: relative;
+  display: block;
+  width: calc(164% + 1.3px);
+  height: 90px;
+}
+.top-wave .shape-fill {
+    fill: #3f126a;
+}
+
+.top-wave-transition {
+  background-color: #3f126a;
+}
+
+.wave-1 {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+.wave-1 svg {
+  position: relative;
+  display: block;
+  width: calc(106% + 1.3px);
+  height: 180px;
+}
+.wave-1 .shape-fill {
+  fill: #3f126a;
+}
+
+.project-info {
+  position: relative;
+  z-index: 2;
+  padding: 0;
+  padding-bottom: 2rem;
+}
+
+.project {
+  position: relative;
+  text-align: center;
+  color: white;
+  z-index: 0;
+  margin-bottom: -1rem;
+}
+
+.first-project {
+  position: relative;
+  z-index: 1;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.second-project {
+  background-color: #393a64;
+  padding-top: 2rem;
+  margin-top: -1px;
+  position: relative;
+}
+
+.third-project {
+  background-color: #534b91;
+  margin-top: 3px;
+  position: relative;
+}
+
+.fourth-project {
+  background-color: #2A1E56;
+
+}
+
+.fifth-project {
+  background-color: rgb(27, 16, 48);
+  margin-bottom: -3px;
+}
+
+.arrow-div-container {
+  position: relative;
+}
+
+.arrow-div {
+  display: flex;
+  flex-wrap: nowrap;
+  margin: auto;
+  height: 100px;
+  width: 110%;
+  left: -5%;
+  right: -5%;
+  position: absolute;
+  overflow: hidden;
+}
+
+.bottom-arrow-div {
+  background-color: transparent;
+}
+.top-arrow-div {
+  background-color: transparent;
+  /* This is the size of the strip of red in the arrow */
+  top: -4px;
+}
+
+.top-arrow {
+  background-color: rgb(27, 16, 48);
+  z-index: 1;
+}
+.bottom-arrow {
+  background-color: #850052;
+  z-index: 0;
+}
+
+.slant {
+  width: 50%;
+  height: 150px;
+  position: absolute;
+  bottom: 50%;
+}
+
+.left-slant {
+  transform: rotate(5deg);
+  left: 9px;
+}
+.right-slant {
+  transform: rotate(-5deg);
+  right: 9px;
+}
