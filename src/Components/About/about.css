@@ -215,11 +215,11 @@ section p {
 
 .about-wave-container {
   position: relative;
-  height: 2000px;
+  height: 3000px;
   width: 100%;
   overflow: hidden;
   background-color: #11111d;
-  margin-bottom: -1750px;
+  margin-bottom: -2750px;
 }
 
 .first-triangle {
