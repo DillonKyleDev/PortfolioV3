@@ -202,17 +202,19 @@ function Body() {
             githubLink={'https://github.com/DillonKyleDev/ISS-Travel-Guide/tree/main'}
             liveSiteLink={'https://dillonkyledev.github.io/ISS-Travel-Guide/'}/>
           </div>
-        
-          <div className='arrow-div-container'>
-            <div className='arrow-div top-arrow-div'>
-              <div className='top-arrow slant left-slant'></div>
-              <div className='top-arrow slant right-slant'></div>
+
+          <div className='arrow-container-container'>
+            <div className='arrow-div-container'>
+              <div className='arrow-div top-arrow-div'>
+                <div className='top-arrow slant left-slant'></div>
+                <div className='top-arrow slant right-slant'></div>
+              </div>
             </div>
-          </div>
-          <div className='arrow-div-container'>
-            <div className='arrow-div bottom-arrow-div'>
-              <div className='bottom-arrow slant left-slant'></div>
-              <div className='bottom-arrow slant right-slant'></div>
+            <div className='arrow-div-container'>
+              <div className='arrow-div bottom-arrow-div'>
+                <div className='bottom-arrow slant left-slant'></div>
+                <div className='bottom-arrow slant right-slant'></div>
+              </div>
             </div>
           </div>
 

@@ -113,6 +113,10 @@
   margin-bottom: -3px;
 }
 
+.arrow-container-container {
+  height: 130px;
+}
+
 .arrow-div-container {
   position: relative;
 }
@@ -121,7 +125,7 @@
   display: flex;
   flex-wrap: nowrap;
   margin: auto;
-  height: 100px;
+  height: 400px;
   width: 110%;
   left: -5%;
   right: -5%;
@@ -149,16 +153,16 @@
 
 .slant {
   width: 50%;
-  height: 150px;
+  height: 300px;
   position: absolute;
   bottom: 50%;
 }
 
 .left-slant {
   transform: rotate(5deg);
-  left: 9px;
+  left: 18px;
 }
 .right-slant {
   transform: rotate(-5deg);
-  right: 9px;
+  right: 18px;
 }
