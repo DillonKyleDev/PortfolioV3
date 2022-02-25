@@ -50,6 +50,15 @@ a {
 }
 
 /*Query selectors*/
+@media only screen and (max-width: 1920px) {
+  .left-slant {
+    left: 16px !important;
+  }
+  .right-slant {
+    right: 16px !important;
+  }
+}
+
 @media only screen and (max-width: 1200px) {
   .priorities-container {
     flex-direction: column;
