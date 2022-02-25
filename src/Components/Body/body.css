@@ -126,9 +126,9 @@
   flex-wrap: nowrap;
   margin: auto;
   height: 400px;
-  width: 110%;
-  left: -5%;
-  right: -5%;
+  width: 120%;
+  left: -10%;
+  right: -10%;
   position: absolute;
   overflow: hidden;
 }
