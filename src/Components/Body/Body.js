@@ -172,7 +172,7 @@ function Body() {
             video={VIDEO_4}
             images={project4Images}
             title={"Portfolio Version 1.0"} 
-            description={"This is my first Front-end Web Development portfolio. It was made using vanilla JavaScript, HTML and CSS, and showcases some of my early learning."} 
+            description={"My first Front-end Web Development portfolio. It was made using vanilla JavaScript, HTML and CSS, and showcases some of my early learning."} 
             tags={["JavaScript", "HTML/CSS", "Responsive", "Node.js", "Express"]}
             githubLink={'https://github.com/DillonKyleDev/PortfolioV1'}
             liveSiteLink={'https://portfolioversion1.herokuapp.com/'}/>

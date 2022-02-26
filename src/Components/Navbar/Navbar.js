@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import './navbar.css';
 import { IoRocketSharp } from 'react-icons/io5';
 import { AiFillFolder, AiFillFolderOpen } from 'react-icons/ai';
@@ -7,10 +7,6 @@ import { TiWaves } from 'react-icons/ti';
 
 function Navbar() {
   const [ selected, setSelected ] = useState('top');
-
-  useEffect(() => {
-
-  }, [ selected ]);
 
   return (
       <div className='navbar'>

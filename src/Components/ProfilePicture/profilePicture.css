@@ -7,7 +7,7 @@
 }
 
 .image-circle {
-  background-image: url('../../assets/TablePhoto.jpg');
+  background-image: url('../../assets/TablePhoto.png');
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -15,25 +15,12 @@
   height: 150%;
   position: relative;
   right: 2.6rem;
-  transition: background-color 0.2s;
 }
 
 .outer-parent {
   position: relative;
   margin: 0;
-  transition: margin 0.2s;
-  transition-timing-function: ease;
   z-index: 6;
-}
-
-.outer-parent:hover .outer-circle {
-  padding: 0rem;
-  margin: 1rem;
-  background-color: white;
-}
-
-.outer-parent:hover {
-  margin: 1rem;
 }
 
 .outer-circle {
