@@ -52,10 +52,10 @@ a {
 /*Query selectors*/
 @media only screen and (max-width: 1920px) {
   .left-slant {
-    left: 16px !important;
+    left: 11px !important;
   }
   .right-slant {
-    right: 16px !important;
+    right: 11px !important;
   }
 }
 
@@ -71,6 +71,10 @@ a {
   
   h1.project-title {
     margin-top: 0;
+  }
+
+  .footer {
+    padding-top: 5rem !important;
   }
 }
 
