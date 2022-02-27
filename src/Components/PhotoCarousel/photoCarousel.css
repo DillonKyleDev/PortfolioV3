@@ -1,7 +1,5 @@
 .carousel-container {
   width: 600px;
-  transition: width 1s;
-  transition-timing-function: ease;
   position: relative;
 }
 
