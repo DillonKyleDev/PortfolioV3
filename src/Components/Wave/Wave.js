@@ -74,7 +74,7 @@ function Wave(props) {
       animateSwitch.current = !animateSwitch.current;
     };
     moveWave();
-    const interval = setInterval(() => {
+    setInterval(() => {
       moveWave();
     }, (duration * 1000))
   }, []);

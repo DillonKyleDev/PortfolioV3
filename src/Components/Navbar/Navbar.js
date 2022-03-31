@@ -3,7 +3,6 @@ import './navbar.css';
 import { IoRocketSharp } from 'react-icons/io5';
 import { AiFillFolder, AiFillFolderOpen } from 'react-icons/ai';
 import { ImProfile } from 'react-icons/im';
-import { TiWaves } from 'react-icons/ti';
 
 function Navbar() {
   const [ selected, setSelected ] = useState('top');
