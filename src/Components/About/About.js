@@ -74,7 +74,7 @@ function About() {
               </div>
               <h1 className='section-title'>Feedback</h1>
               <p>
-                Applying feedback to my work is an invaluable part of my process. It's a proven fact that you can't learn anything new if there's no external information coming in.
+                Applying feedback to my work is an invaluable part of my process. You can't learn anything new or grow if there's no external information coming in.
               </p>
             </section>
           </div>
