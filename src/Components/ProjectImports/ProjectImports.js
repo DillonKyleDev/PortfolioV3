@@ -6,8 +6,7 @@ import Project from '../Project/Project';
 import videoScreenShot from '../../assets/BookKeeper/VideoPlayButton.png';
 import videoScreenShotAlpha from '../../assets/BookKeeper/VideoThumbnailAlpha.png';
 import ThirdCombination from '../../assets/BookKeeper/ThirdCombination.png';
-import project0Image10 from '../../assets/BookKeeper/AchievementsView.png';
-import project0Image0 from '../../assets/BookKeeper/Splash.png';
+import last2 from '../../assets/BookKeeper/last2.png';
 //Netflix
 import project1Image0 from '../../assets/NetflixClone/PlayButton.png';
 import project1Image1 from '../../assets/NetflixClone/Hero.png';
@@ -71,8 +70,7 @@ const project5Images = [
   videoScreenShot,
   videoScreenShotAlpha,
   ThirdCombination,
-  project0Image0,
-  project0Image10,
+  last2
 ];
 
 const VIDEO_1 = "https://www.youtube.com/embed/9_nI0HaaXbc?rel=0&mute=1&showinfo=0&controls=1";
@@ -87,7 +85,7 @@ export const BookKeeperAppProject =
   video={VIDEO_5} 
   images={project5Images}
   title="Book Keeper Android App"
-  description="A React Native Android application soon to be available on the Google Play Store.  This app is designed to increase your reading volume. Users choose books and the dates they wish to finish them on, as well as the days of the week they'll devote to reading, and Book Keeper does the rest. App in review, will release shortly."
+  description={<p>A React Native Android application soon to be available on the <span style={{fontWeight: 900}}>Google Play Store</span>.  This app is designed to increase your reading volume. Users choose books and the dates they wish to finish them on, as well as the days of the week they'll devote to reading, and Book Keeper does the rest. App in review, will release shortly.</p>}
   tags={["React Native", "TypeScript", "Redux", "Android Application", "Responsive", "Google Play Store"]}
   githubLink='https://github.com/DillonKyleDev/Book-Keeper'
   playStoreLink='https://netflix-home-2021.herokuapp.com/'

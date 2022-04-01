@@ -4,6 +4,7 @@ import { GiInterceptorShip } from 'react-icons/gi';
 import { IoIosColorPalette } from 'react-icons/io';
 import { VscColorMode } from 'react-icons/vsc';
 import { GiLightningTrio } from 'react-icons/gi';
+import { RiMessage2Line } from 'react-icons/ri';
 import './about.css';
 import Wave from '../Wave/Wave';
 
@@ -69,11 +70,11 @@ function About() {
             <section>
               <div className='hex-container'>
                 <BsFillHexagonFill size={200} className='hexagon'/>
-                <GiLightningTrio  size={100} className='about-icon'/>
+                <RiMessage2Line  size={100} className='about-icon'/>
               </div>
-              <h1 className='section-title'>Performance</h1>
+              <h1 className='section-title'>Feedback</h1>
               <p>
-                Unoptimized apps can be hard to use. I like using tools like React's <a className="about-link" href="https://reactjs.org/docs/perf.html" target="_blank" rel="noreferrer" alt="React Perf Tool">Perf Tool</a> to check for unnecessary renders in my apps.
+                Applying feedback to my work is an invaluable part of my process. It's a proven fact that you can't learn anything new if there's no external information coming in.
               </p>
             </section>
           </div>
