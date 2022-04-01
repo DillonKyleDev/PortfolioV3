@@ -5,15 +5,7 @@ import Project from '../Project/Project';
 //Book Keeper
 import videoScreenShot from '../../assets/BookKeeper/VideoPlayButton.png';
 import videoScreenShotAlpha from '../../assets/BookKeeper/VideoThumbnailAlpha.png';
-import project0Image1 from '../../assets/BookKeeper/GoalView.png';
-import project0Image2 from '../../assets/BookKeeper/LibrarySingle.png';
-import project0Image3 from '../../assets/BookKeeper/ChooseDate.png';
-import project0Image4 from '../../assets/BookKeeper/ChooseWeekdays.png';
-import project0Image5 from '../../assets/BookKeeper/PreviewGoal.png';
-import project0Image6 from '../../assets/BookKeeper/SingleGoalView.png';
-import project0Image7 from '../../assets/BookKeeper/LibraryView.png';
-import project0Image8 from '../../assets/BookKeeper/Search.png';
-import project0Image9 from '../../assets/BookKeeper/SearchView.png';
+import ThirdCombination from '../../assets/BookKeeper/ThirdCombination.png';
 import project0Image10 from '../../assets/BookKeeper/AchievementsView.png';
 import project0Image0 from '../../assets/BookKeeper/Splash.png';
 //Netflix
@@ -78,16 +70,8 @@ const project4Images = [
 const project5Images = [
   videoScreenShot,
   videoScreenShotAlpha,
+  ThirdCombination,
   project0Image0,
-  project0Image1,
-  project0Image2,
-  project0Image3,
-  project0Image4,
-  project0Image5,
-  project0Image6,
-  project0Image7,
-  project0Image8,
-  project0Image9,
   project0Image10,
 ];
 
