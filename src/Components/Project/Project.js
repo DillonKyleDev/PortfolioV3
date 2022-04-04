@@ -32,7 +32,7 @@ function Project(props) {
               }) }
             </ul>
 
-            { githubLink  && 
+            { githubLink && 
               <a href={githubLink} className="project-link" target="_blank" rel="noreferrer" alt="GitHub Repo">
                 <button className='link-button'>
                   <BsGithub size={20} className='link-icon'/>
@@ -41,9 +41,9 @@ function Project(props) {
                 </button>
               </a>
             }
-            { playStoreLink !== ''  && 
-              <a href="#" className="project-link" rel="noreferrer" alt="Play store listing">
-                <button className='link-button play-store-button'>
+            { playStoreLink !== '' && 
+              <a href="https://play.google.com/store/apps/details?id=com.BookKeeper" target="_blank" className="project-link" rel="noreferrer" alt="Play store listing">
+                <button className='link-button'>
                   <FaGooglePlay size={20} className='link-icon'/>
                     Google Play
                   <MdOpenInNew size={15} className='new-tab'/>

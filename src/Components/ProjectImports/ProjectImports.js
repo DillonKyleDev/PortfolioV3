@@ -85,7 +85,7 @@ export const BookKeeperAppProject =
   video={VIDEO_5} 
   images={project5Images}
   title="Book Keeper Android App"
-  description={<p>A React Native Android application soon to be available on the <span style={{fontWeight: 900}}>Google Play Store</span>.  This app is designed to increase your reading volume. Users choose books and the dates they wish to finish them on, as well as the days of the week they'll devote to reading, and Book Keeper does the rest. App in review, will release shortly.</p>}
+  description={<p>A React Native Android application available on the <span style={{fontWeight: 900}}>Google Play Store</span>.  This app is designed to increase your reading volume. Users choose books and the dates they wish to finish them on, as well as the days of the week they'll devote to reading, and Book Keeper does the rest. Book Keeper is free, go try it out!</p>}
   tags={["React Native", "TypeScript", "Redux", "Android Application", "Responsive", "Google Play Store"]}
   githubLink='https://github.com/DillonKyleDev/Book-Keeper'
   playStoreLink='https://netflix-home-2021.herokuapp.com/'
