@@ -4,8 +4,8 @@ import Project from '../Project/Project';
 //Project Image Imports
 //Book Keeper
 import videoScreenShot from '../../assets/BookKeeper/VideoPlayButton.png';
-import videoScreenShotAlpha from '../../assets/BookKeeper/VideoThumbnailAlpha.png';
-import ThirdCombination from '../../assets/BookKeeper/ThirdCombination.png';
+import AddBook from '../../assets/BookKeeper/AddBook.png';
+import AddGoal from '../../assets/BookKeeper/AddGoal.png';
 import last2 from '../../assets/BookKeeper/last2.png';
 //Netflix
 import project1Image0 from '../../assets/NetflixClone/PlayButton.png';
@@ -68,8 +68,8 @@ const project4Images = [
 ];
 const project5Images = [
   videoScreenShot,
-  videoScreenShotAlpha,
-  ThirdCombination,
+  AddBook,
+  AddGoal,
   last2
 ];
 
