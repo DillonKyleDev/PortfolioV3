@@ -84,8 +84,8 @@ export const BookKeeperAppProject =
 <Project 
   video={VIDEO_5} 
   images={project5Images}
-  title="Book Keeper Android App"
-  description={<p>A React Native Android application available on the <span style={{fontWeight: 900}}>Google Play Store</span>.  This app is designed to increase your reading volume. Users choose books and the dates they wish to finish them on, as well as the days of the week they'll devote to reading, and Book Keeper does the rest. Book Keeper is free, go try it out!</p>}
+  title={<p><i>Book Keeper</i> - Android App</p>}
+  description={<p>A React Native Android application available for free on the <span style={{fontWeight: 900}}>Google Play Store</span>.  I developed this app as a tool to help myself read more books and to help others do the same.  Through <i>Book Keeper</i>, users choose a book and the date they wish to finish on, as well as the weekdays they'll devote to reading, and <i>Book Keeper</i> does the rest. This app is receiving updates.</p>}
   tags={["React Native", "TypeScript", "Redux", "Android Application", "Responsive", "Google Play Store"]}
   githubLink='https://github.com/DillonKyleDev/Book-Keeper'
   playStoreLink='https://netflix-home-2021.herokuapp.com/'
@@ -115,7 +115,7 @@ export const PaidArtPortfolioProject =
   video={VIDEO_3}
   images={project3Images}
   title="Paid Art Portfolio"
-  description="A professional art portfolio made to client specification using React Bootstrap. Features a behind the scenes login for the owner to upload and edit portfolio images. Live site unavailable per request of client and due to the nature of the content."
+  description="A professional art portfolio made to client specification using React Bootstrap. Features a behind the scenes login for the owner to upload and edit portfolio images. The live site is unlisted due to the nature of the content."
   tags={["React", "JavaScript", "HTML/CSS", "Bootstrap", "Responsive", "MongoDB", "Node.js", "Express", "Authentication"]}
   githubLink='https://github.com/DillonKyleDev/DarianPortfolio'
   liveSiteLink=''
