@@ -3,7 +3,6 @@ import { BsFillHexagonFill } from 'react-icons/bs';
 import { GiInterceptorShip } from 'react-icons/gi';
 import { IoIosColorPalette } from 'react-icons/io';
 import { VscColorMode } from 'react-icons/vsc';
-import { GiLightningTrio } from 'react-icons/gi';
 import { RiMessage2Line } from 'react-icons/ri';
 import './about.css';
 import Wave from '../Wave/Wave';
@@ -59,7 +58,7 @@ function About() {
                 <VscColorMode  size={100} className='about-icon'/>
               </div>
               <h1 className='section-title'>Accessibility</h1>
-              <p>
+              <p className="card-text">
                 I use tools like <a className="about-link" href="https://chrome.google.com/webstore/detail/access-assistant/ojiighldhdmahfdnhfdebnpmlbiemdfm" target="_blank" rel="noreferrer" alt="Chrome Accessabilty Assistant">
                   Chrome Access Assistant
                 </a> and <a className="about-link" href="https://color.a11y.com/?wc3" target="_blank" rel="noreferrer" alt="Color a11y">
@@ -73,7 +72,7 @@ function About() {
                 <RiMessage2Line  size={100} className='about-icon'/>
               </div>
               <h1 className='section-title'>Feedback</h1>
-              <p>
+              <p className="card-text">
                 Applying feedback to my work is an invaluable part of my process. You can't learn anything new or grow if there's no external information coming in.
               </p>
             </section>
@@ -85,7 +84,7 @@ function About() {
                 <IoIosColorPalette  size={100} className='about-icon'/>
               </div>
               <h1 className='section-title'>Design</h1>
-              <p>Who says performant can't also be beautiful? I can turn any concept, i.e. <a className="about-link" href="https://www.figma.com/w" target="_blank" rel="noreferrer" alt="Figma">Figma</a>, into a beautiful and fully realized UI.</p>
+              <p className="card-text">Who says performant can't also be beautiful? I can turn any concept, i.e. <a className="about-link" href="https://www.figma.com/w" target="_blank" rel="noreferrer" alt="Figma">Figma</a>, into a beautiful and fully realized UI.</p>
             </section>
             <section>
               <div className='hex-container'>
@@ -93,7 +92,7 @@ function About() {
                 <GiInterceptorShip size={100} className='about-icon'/>
               </div>
               <h1 className='section-title'>Dynamism</h1>
-              <p className='dynamism-p'>Websites don't have to be static, I love making pages come to life with <button className='interaction'>interaction</button> and <button className="animation">animation!</button></p>
+              <p className='dynamism-p card-text'>Websites don't have to be static, I love making pages come to life with <button className='interaction'>interaction</button> and <button className="animation">animation!</button></p>
             </section>
           </div>
         </div>

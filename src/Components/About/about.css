@@ -36,6 +36,7 @@
 
 .bio-container {
   background-color: #17092c;
+  font-weight: 900;
 }
 
 .bio-text {
@@ -154,9 +155,10 @@ section {
 section p {
   text-align: justify;
   position: absolute;
-  font-size: 1.1rem;
+  font-size: 1rem;
   right: -1rem;
   width: 110%;
+  font-weight: 900;
 }
 
 .about-link {
