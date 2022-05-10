@@ -84,7 +84,7 @@ export const BookKeeperAppProject =
 <Project 
   video={VIDEO_5} 
   images={project5Images}
-  title={<p><i>Book Keeper</i> - Android App</p>}
+  title={<><i>Book Keeper</i> - Android App</>}
   description={<p>A React Native Android application available for free on the <span style={{fontWeight: 900}}>Google Play Store</span>.  I developed this app as a tool to help myself read more books and to help others do the same.  Through <i>Book Keeper</i>, users choose a book and the date they wish to finish on, as well as the weekdays they'll devote to reading, and <i>Book Keeper</i> does the rest. This app is receiving updates.</p>}
   tags={["React Native", "TypeScript", "Redux", "Android Studio", "Android Application", "Responsive", "Google Play Store"]}
   githubLink='https://github.com/DillonKyleDev/Book-Keeper'
