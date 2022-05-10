@@ -19,7 +19,7 @@ function Project(props) {
             <h1 className='project-title'>
               {title}
             </h1>
-            <p>
+            <p className="project-info-text">
               {description}
             </p>
             <ul className='tag-list'> Tags:
