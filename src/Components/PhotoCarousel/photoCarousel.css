@@ -3,6 +3,10 @@
   position: relative;
 }
 
+.carousel-slider {
+  box-shadow: 1px 30px 80px -30px black;
+}
+
 .wide-screen {
   height: max-content;
   position: absolute;
