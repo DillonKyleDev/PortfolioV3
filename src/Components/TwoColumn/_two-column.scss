@@ -3,11 +3,45 @@
 .two-column {
   display: flex;
   flex-direction: column;
-  column-gap: $padding--small;
 
-  @media (min-width: $viewport-hd--min) {
+  @media (min-width: $viewport-tablet--min) {
     flex-direction: row;
     row-gap: $padding--small;
+    align-items: center;
+
+    // Spacing
+
+    &--spacing-xxs {
+      column-gap: $padding--xxs;
+    }
+
+    &--spacing-xs {
+      column-gap: $padding--xs;
+    }
+
+    &--spacing-small {
+      column-gap: $padding--small;
+    }
+
+    &--spacing-medium {
+      column-gap: $padding--medium;
+    }
+
+    &--spacing-large {
+      column-gap: $padding--large;
+    }
+
+    &--spacing-xl {
+      column-gap: $padding--xl;
+    }
+
+    &--spacing-xxl {
+      column-gap: $padding--xxl;
+    }
+
+    &--spacing-xxxl {
+      column-gap: $padding--xxxl;
+    }
 
     &__column {
       width: 50%;

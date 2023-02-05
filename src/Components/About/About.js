@@ -15,11 +15,11 @@ function About() {
           </div> 
 
           <div className='about__bio-text'>
-            <p>
+            <p className='large'>
               My primary goal as a Web Developer is to make tools that empower people to do what they love in new and exciting ways. 
               Software engineers have the ability to bring convenience and accessibility to everyone and I strongly believe it is our responsibilty to do so.
             </p>
-            <p>
+            <p className='large'>
               But bringing tools to everyone is a big task, and I'm always looking for ways to improve experiences. Here are some of the things I keep in mind 
               when creating user interfaces:
             </p>

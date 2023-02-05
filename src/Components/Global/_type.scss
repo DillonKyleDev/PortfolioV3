@@ -1,3 +1,46 @@
+@import '../Global/_variables.scss';
+
+.on-light {
+  p,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: $body-text;
+  }
+}
+
+.on-dark {
+  p,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: white;
+  }
+}
+
+.display--1 {
+  font-size: 64px;
+  margin-bottom: $padding--xs;
+}
+
+.display--2 {
+  font-size: 48px;
+  margin-bottom: $padding--xxs;
+}
+
+.display--3 {
+  font-size: 36px;
+  margin-bottom: $padding--xxxs;
+}
+
+
+p,
 h1,
 h2,
 h3,
@@ -9,8 +52,15 @@ h6 {
 }
 
 p {
+  font-family: 'Josefin Sans', sans-serif;
   text-align: left;
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 700;
   line-height: 1.6;
+  color: $body-text;
+
+  &.large {
+    font-size: 20px;
+    line-height: 1.8;
+  }
 }

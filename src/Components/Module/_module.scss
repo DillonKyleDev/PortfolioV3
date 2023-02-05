@@ -3,6 +3,10 @@
 .module {
   position: relative;
 
+  &--hide-overflow {
+    overflow: hidden;    
+  }
+
   &__bg-container {
     position: absolute;
     top: 0;
@@ -41,20 +45,34 @@
     top: 0;
     z-index: -1;
 
-    svg {
-      transform: scaleY(8) translateY(12%);
+    &--top-right {
+      svg {
+        transform: scaleY(8) translateY(12%) translateX(20%);
+      }
     }
 
     &--bottom-right {
       transform: rotateX(180deg);
+
+      svg {
+        transform: scaleY(8) translateY(12%);
+      }
     }
 
     &--top-left {
       transform: rotateY(180deg);
+            
+      svg {
+        transform: scaleY(8) translateY(12%) translateX(-20%);
+      }
     }
 
     &--bottom-left {
       transform: rotateY(180deg) rotateX(180deg);
+
+      svg {
+        transform: scaleY(8) translateY(12%);
+      }
     }
 
     &--primary {
@@ -172,6 +190,10 @@
     &--xxl {
       padding-top: $padding--xxl;
     }
+
+    &--xxxl {
+      padding-top: $padding--xxxl;
+    }
   }
 
   &__padding-bottom {
@@ -202,5 +224,31 @@
     &--xxl {
       padding-bottom: $padding--xxl;
     }
+
+    &--xxxl {
+      padding-bottom: $padding--xxxl;
+    }
+  }
+
+  &__section-header {
+    margin-bottom: $padding--small;
+
+    &--align-left {
+      &,* {
+        text-align: left;
+      }
+    }
+
+    &--align-right {
+      &,* {
+        text-align: right;
+      }
+    }
+
+    &--align-center {
+      &,* {
+        text-align: center;
+      }
+    }    
   }
 }

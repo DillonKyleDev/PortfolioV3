@@ -1,0 +1,159 @@
+@import '../Global/_variables.scss';
+
+.multi-column {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $viewport-tablet--min) {
+    flex-direction: row;
+
+    > * {
+      flex: 1;
+    }
+
+    // Column Types
+    
+    &--icon-card {
+      > * {
+        border: solid 1px $secondary--dark;        
+        border-radius: 3px;
+        box-shadow: $shadow--level-2;
+        transition: box-shadow 0.3s;
+
+        &:hover {
+          box-shadow: $shadow--level-4;
+        }
+      }
+    }
+
+    // Row Counts
+
+    &--two-column {
+      column-count: 2;
+    }
+
+    &--three-column {
+      column-count: 3;
+    }
+
+    &--four-column {
+      column-count: 4;
+    }
+
+    // Spacing
+    
+    &--spacing-xxxs {
+      column-gap: $padding--xxxs;
+    }
+
+    &--spacing-xxs {
+      column-gap: $padding--xxs;
+    }
+    
+    &--spacing-xs {
+      column-gap: $padding--xs;
+    }
+
+    &--spacing-small {
+      column-gap: $padding--small;
+    }
+
+    &--spacing-medium {
+      column-gap: $padding--medium;
+    }
+
+    &--spacing-large {
+      column-gap: $padding--large;
+    }
+
+    // Padding
+
+    &--padding-xxxs {
+      > div {
+        padding: $padding--xxxs;
+      }
+    }
+
+    &--padding-xxs {
+    > div {
+        padding: $padding--xxs;
+      }
+    }
+    
+    &--padding-xs {
+      > div {
+        padding: $padding--xs;
+      }
+    }
+
+    &--padding-small {
+      > div {
+        padding: $padding--small;
+      }
+    }
+
+    &--padding-medium {
+      > div {
+        padding: $padding--medium;
+      }
+    }
+
+    &--padding-large {
+      > div {
+        padding: $padding--large;
+      }
+    }
+  }
+}
+
+
+.icon-card {
+  background-color: white;
+
+  &__icon {
+    width: 52px;
+    height: 52px;
+    margin-bottom: $padding--xxs;        
+  }
+
+  &__title {
+    margin-bottom: $padding--xxxs;
+    color: $primary !important;
+  }
+}
+  
+.color-card {
+  width: 100%;
+  padding-bottom: 100%;
+  position: relative;  
+
+  > div {
+    border-radius: 3px;
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+  }
+
+  &__background-color {
+    &--primary {
+      background-color: $primary;
+    }
+
+    &--secondary {
+      background-color: $secondary;
+    }
+
+    &--secondary-light {
+      background-color: $secondary--light;
+    }
+  
+    &--secondary-dark {
+      background-color: $secondary--dark;
+    }
+  }
+
+  &__fade {
+    background: $gradient--white;
+  }
+}

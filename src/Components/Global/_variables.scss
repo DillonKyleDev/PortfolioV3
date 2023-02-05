@@ -11,6 +11,11 @@ $neutral--light: rgb(158, 158, 158);
 $neutral--medium: rgb(110, 110, 110);
 $neutral--dark: #282c34;
 
+$body-text: #1e2025;
+
+// Gradients
+$gradient--white: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.9192051820728291) 15%, rgba(255,255,255,0.11248249299719892) 47%, rgba(255,255,255,0.008841036414565795) 70%, rgba(255,255,255,0) 100%);
+
 // Shadows
 $shadow--level-1: 0px 0px 5px rgba(0,0,0, 0.08), 0px 5px 5px rgba(0,0,0, 0.09);
 $shadow--level-2: 0px 0px 6px rgba(0,0,0, 0.06), 0px 6px 9px rgba(0,0,0, 0.13);

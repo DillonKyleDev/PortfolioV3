@@ -12,11 +12,17 @@
 
   &__photo {    
     position: absolute;
-    width: 100%;
+    height: 100%;
   }
 
   &__name {
     text-decoration: underline;
     text-decoration-color: $primary;
+  }
+
+  &__introduction {
+    h1 {
+      font-size: 66px;
+    }
   }
 }

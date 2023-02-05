@@ -1,5 +1,5 @@
 import React from 'react';
-import profilePicture from '../../assets/TablePhoto.png';
+import profilePicture from '../../assets/main-photo.jpg';
 import './_heroContainer.scss';
 import MenuButton from  '../MenuButton/MenuButton';
 
@@ -11,8 +11,8 @@ function HeroContainer() {
       </div>
 
       <div className='hero-container__introduction'>      
-        <h1>Hello, I'm <span class="hero-container__name">Dillon Kyle</span>.</h1>
-        <h1>I'm a front-end developer.</h1>    
+        <h1>Meet <span class="hero-container__name">Dillon Kyle</span>,</h1>
+        <h1>a front-end developer.</h1>    
 
         <MenuButton buttonText='See more' 
           href='#about'

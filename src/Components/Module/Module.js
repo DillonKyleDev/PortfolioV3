@@ -4,19 +4,23 @@ import './_module.scss';
 function Module(props) {
   const { 
     content,
+    sectionHeader,
     style={
+      header_alignment: 'left',
+      text_color: 'on-light',
       constrain: 'large',
       top_padding: 'medium',
       bottom_padding: 'medium',
       background_color: 'transparent',
       show_background_svg_: false,
       svg_color: 'secondary-light',
-      background_svg_side: 'top-right'
+      background_svg_side: 'top-right',
+      hide_overflow_: false,
     }
   } = props;
 
   return (
-    <div className='module'>
+    <div className={`module ${ style.text_color } ${ style.hide_overflow_ && 'module--hide-overflow' }`}>      
       <div className={`module__bg-container module__bg-color--${style.background_color}`}></div>
       { style.show_background_svg_ &&
         <div className={`module__background-svg ${`module__background-svg--${style.background_svg_side}`} module__background-svg--${ style.svg_color }`}>
@@ -25,6 +29,9 @@ function Module(props) {
         </div>
       }
       <div className={ `module__constrain module__constrain--${ style.constrain } module__padding-top--${style.top_padding} module__padding-bottom--${style.bottom_padding}` }>
+        <div className={`module__section-header module__section-header--align-${ style.header_alignment }`}>
+          { sectionHeader }
+        </div>
         { content }
       </div>
     </div>
