@@ -1,5 +1,5 @@
 import React from 'react';
-import './project.css';
+import './_project.scss';
 import PhotoCarousel from '../PhotoCarousel/PhotoCarousel';
 import { GiWireframeGlobe } from 'react-icons/gi';
 import { BsGithub } from 'react-icons/bs';

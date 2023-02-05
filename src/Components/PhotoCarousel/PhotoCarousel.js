@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './photoCarousel.css';
+import './_photo-carousel.scss';
 import '../../../node_modules/react-responsive-carousel/lib/styles/carousel.min.css';
 import { Carousel } from 'react-responsive-carousel';
 import { BsArrowsFullscreen, BsFullscreenExit } from 'react-icons/bs';

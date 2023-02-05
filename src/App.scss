@@ -4,8 +4,7 @@ html {
 }
 
 .App {
-  font-family: 'Work Sans', sans-serif;
-  text-align: center;
+  font-family: 'Roboto', sans-serif;  
   position: relative;
   letter-spacing: 1px;
 }
@@ -127,38 +126,6 @@ a {
     color: white !important;
   }
 
-  .navbar {
-    width: 100% !important;
-    height: 70px !important;
-    position: fixed !important;
-    flex-direction: row !important;
-    align-items: center !important;
-    z-index: 10;
-  }
-
-  .nav-icons {
-    height: 100% !important;
-    width: 100% !important;
-    display: flex !important;
-    flex-direction: row !important;
-    align-items: center !important;
-  }
-
-  .icon-container {
-    margin: 0 !important;
-    margin-left: 0.5rem !important;
-  }
-
-  .wave-toggle {
-    right: 0.5rem;
-    top: 0.5rem;
-  }
-
-  .content {
-    width: 100% !important;
-    margin-left: 0px !important;
-  }
-
   section {
     margin: 0 !important;
     padding: 0.2rem !important;
@@ -173,10 +140,7 @@ a {
   }
 
   p {
-    position: static !important;
-    width: auto !important;
-    font-size: 0.8rem !important;
-    text-align: center !important;
+
   }
 
   .project-text > p {

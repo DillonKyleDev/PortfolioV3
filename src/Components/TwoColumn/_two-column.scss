@@ -1,0 +1,16 @@
+@import '../Global/_variables.scss';
+
+.two-column {
+  display: flex;
+  flex-direction: column;
+  column-gap: $padding--small;
+
+  @media (min-width: $viewport-hd--min) {
+    flex-direction: row;
+    row-gap: $padding--small;
+
+    &__column {
+      width: 50%;
+    }
+  }
+}

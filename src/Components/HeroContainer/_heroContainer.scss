@@ -1,0 +1,22 @@
+@import '../Global/_variables.scss';
+
+.hero-container {
+  &__photo-container {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;    
+    margin-bottom: $padding--xxs;  
+  }
+
+  &__photo {    
+    position: absolute;
+    width: 100%;
+  }
+
+  &__name {
+    text-decoration: underline;
+    text-decoration-color: $primary;
+  }
+}

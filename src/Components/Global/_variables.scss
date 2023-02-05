@@ -1,0 +1,50 @@
+// Variables
+
+
+// Colors
+$primary: rgb(185, 0, 93);
+$secondary: #19192a;
+$secondary--light: #414667;
+$secondary--dark: #11111d;
+
+$neutral--light: rgb(158, 158, 158);
+$neutral--medium: rgb(110, 110, 110);
+$neutral--dark: #282c34;
+
+// Shadows
+$shadow--level-1: 0px 0px 5px rgba(0,0,0, 0.08), 0px 5px 5px rgba(0,0,0, 0.09);
+$shadow--level-2: 0px 0px 6px rgba(0,0,0, 0.06), 0px 6px 9px rgba(0,0,0, 0.13);
+$shadow--level-3: 0px 9px 23px rgba(0,0,0, 0.09), 0px 6px 8px rgba(0,0,0, 0.1);
+$shadow--level-4: 0px 14px 30px rgba(0,0,0, 0.1), 0px 3px 16px rgba(0,0,0, 0.07);
+
+// View Widths
+$viewport-mobile--max: 768px; 
+$viewport-tablet--min: 769px;
+$viewport-tablet--max: 992px;
+$viewport-laptop--min: 993px;
+$viewport-laptop--max: 1440px;
+$viewport-hd--min: 1441px;
+$viewport-uhd--min: 1921px;
+
+// Spacing
+$padding--xxxs: 10px;
+$padding--xxs: 20px;
+$padding--xs: 20px;
+$padding--small: 30px;
+$padding--medium: 30px;
+$padding--large: 60px;
+$padding--xl: 60px;
+$padding--xxl: 90px;
+$padding--xxxl: 100px;
+
+// @media (min-width: $viewport-tablet--min) {
+  $padding--xxxs: 10px;
+  $padding--xxs: 20px;
+  $padding--xs: 40px;
+  $padding--small: 60px;
+  $padding--medium: 90px;
+  $padding--large: 120px;
+  $padding--xl: 160px;
+  $padding--xxl: 200px;
+  $padding--xxxl: 300px;
+// }

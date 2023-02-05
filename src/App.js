@@ -1,4 +1,5 @@
-import './App.css';
+import './App.scss';
+import './Components/Global/_type.scss';
 import Navbar from './Components/Navbar/Navbar';
 import Content from './Components/Content/Content';
 
