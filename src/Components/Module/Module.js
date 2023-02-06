@@ -7,6 +7,8 @@ function Module(props) {
     sectionHeader,
     style={
       header_alignment: 'left',
+      header_width: 'half',
+      show_section_header_: false,
       text_color: 'on-light',
       constrain: 'large',
       top_padding: 'medium',
@@ -29,9 +31,11 @@ function Module(props) {
         </div>
       }
       <div className={ `module__constrain module__constrain--${ style.constrain } module__padding-top--${style.top_padding} module__padding-bottom--${style.bottom_padding}` }>
-        <div className={`module__section-header module__section-header--align-${ style.header_alignment }`}>
-          { sectionHeader }
-        </div>
+        { style.show_section_header_ &&
+          <div className={`module__section-header module__section-header--align-${ style.header_alignment } module__section-header--width-${ style.header_width }`}>
+            { sectionHeader }
+          </div>
+        }
         { content }
       </div>
     </div>

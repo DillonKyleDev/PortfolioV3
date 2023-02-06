@@ -1,5 +1,5 @@
 import React from 'react';
-import './footer.css';
+import './_footer.scss';
 import { BsGithub } from 'react-icons/bs';
 import { AiFillLinkedin } from 'react-icons/ai';
 
@@ -21,9 +21,10 @@ function Footer() {
               className="footer-icon"/>
             </a>
           </p>
-          <p>Dillon H. Kyle</p>
-          <p className='year'>2022</p>
-          <p className='small-text'>This portfolio was made using React.</p>
+          <p>
+            DK Web Solutions<span class="material-symbols-sharp copyright-symbol">copyright</span> 2021 - 2023</p>
+          <p className='year'></p>
+          <p className='small-text'>Made with React.</p>
           <div className='footer-bar'></div>
         </div>
       </div>

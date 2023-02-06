@@ -1,11 +1,10 @@
-.footer {
-  padding-top: 8rem;
-  height: 400px;
-  background-color: #1f1f32;
+@import '../Global/_variables.scss';
+
+.footer {  
   color: white;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
 }
 
@@ -14,15 +13,18 @@
   text-align: center;
 }
 
-.footer > p {
-  margin: 0;
-  padding: 0.5rem 0rem;
+.footer p {
+  margin-bottom: 0;
+  padding: 0;
 }
 
 .footer-link {
   color: white;
-  margin: 0 0.5rem;
-  transition: color 0.4s, transform 0.4s;
+  transition: color 0.2s;
+
+  &:not(:last-child) {
+    margin-right: $padding--xxxs;
+  }
 }
 
 .footer-link:hover {
@@ -31,14 +33,18 @@
 }
 
 .small-text {
-  font-size: 0.85rem;
+  margin-top: $padding--xxxs;
+  font-size: 0.85rem;  
 }
 
 .footer-bar {
   width: 75%;
   background-color: white;
   height: 1px;
-  margin-top: 3rem;
-  margin-left: auto;
+  margin-top: $padding--xs;
   margin-right: auto;
+}
+
+.copyright-symbol {
+  transform: scale(.8);
 }

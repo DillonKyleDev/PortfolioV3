@@ -11,9 +11,16 @@
   justify-content: space-between;
 
   &__logo {
+    display: flex;
+    align-items: flex-start;
+
     path {
       fill: white;
     }
+  }
+
+  &__logo-text {
+    color: white;
   }
 
   &__menu-items {

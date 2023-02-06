@@ -3,33 +3,29 @@
 .multi-column {
   display: flex;
   flex-direction: column;
+  height: 100%;
 
   @media (min-width: $viewport-tablet--min) {
     flex-direction: row;
-
-    > * {
-      flex: 1;
-    }
+    flex-wrap: wrap;
 
     // Column Types
     
     &--icon-card {
-      > * {
-        border: solid 1px $secondary--dark;        
-        border-radius: 3px;
-        box-shadow: $shadow--level-2;
-        transition: box-shadow 0.3s;
 
-        &:hover {
-          box-shadow: $shadow--level-4;
-        }
-      }
     }
 
     // Row Counts
 
     &--two-column {
       column-count: 2;
+      width: calc(100% + 20px);
+      margin: 0 -10px;
+
+      > div {
+        box-sizing: border-box;
+        width: 50%;
+      }
     }
 
     &--three-column {
@@ -38,68 +34,87 @@
 
     &--four-column {
       column-count: 4;
+      width: calc(100% + 20px);
+      margin: 0 -10px;
+
+      > div {
+        box-sizing: border-box;
+        width: 25%;
+      }
     }
 
     // Spacing
     
     &--spacing-xxxs {
-      column-gap: $padding--xxxs;
+      > div {
+        padding: 5px
+      }
     }
 
-    &--spacing-xxs {
-      column-gap: $padding--xxs;
+    &--spacing-xxs {  
+      > div {
+        padding: 10px
+      }
     }
     
     &--spacing-xs {
-      column-gap: $padding--xs;
+      > div {
+        padding: 20px
+      }
     }
 
     &--spacing-small {
-      column-gap: $padding--small;
+      > div {
+        padding: 30px
+      }
     }
 
     &--spacing-medium {
-      column-gap: $padding--medium;
+      > div {
+        padding: 45px
+      }
     }
 
     &--spacing-large {
-      column-gap: $padding--large;
+      > div {
+        padding: 60px
+      }
     }
 
     // Padding
 
     &--padding-xxxs {
-      > div {
+      > div > div {
         padding: $padding--xxxs;
       }
     }
 
     &--padding-xxs {
-    > div {
+    > div > div {
         padding: $padding--xxs;
       }
     }
     
     &--padding-xs {
-      > div {
+      > div > div {
         padding: $padding--xs;
       }
     }
 
     &--padding-small {
-      > div {
+      > div > div {
         padding: $padding--small;
       }
     }
 
     &--padding-medium {
-      > div {
+      > div > div {
         padding: $padding--medium;
       }
     }
 
     &--padding-large {
-      > div {
+      > div > div {
         padding: $padding--large;
       }
     }
@@ -108,52 +123,39 @@
 
 
 .icon-card {
-  background-color: white;
+  &-spacing {
+    display: flex;
+  }
+
+  border: solid 1px $secondary--dark;  
+  background-color: white;      
+  border-radius: 3px;
+  box-shadow: $shadow--level-1;
+  transition: box-shadow 0.3s;  
+  flex: 1;
+
+  &:hover {
+    box-shadow: $shadow--level-4;
+  }
 
   &__icon {
-    width: 52px;
-    height: 52px;
-    margin-bottom: $padding--xxs;        
+    width: 48px;
+    height: 48px;
+    margin-bottom: $padding--xxs; 
+          
+    span {
+      transform: scale(2) translate(25%, 25%);
+    }
   }
 
   &__title {
     margin-bottom: $padding--xxxs;
     color: $primary !important;
   }
-}
-  
-.color-card {
-  width: 100%;
-  padding-bottom: 100%;
-  position: relative;  
 
-  > div {
-    border-radius: 3px;
-    position: absolute;
-    z-index: -1;
-    width: 100%;
-    height: 100%;
-  }
-
-  &__background-color {
-    &--primary {
-      background-color: $primary;
-    }
-
-    &--secondary {
-      background-color: $secondary;
-    }
-
-    &--secondary-light {
-      background-color: $secondary--light;
-    }
-  
-    &--secondary-dark {
-      background-color: $secondary--dark;
-    }
-  }
-
-  &__fade {
-    background: $gradient--white;
+  &__text {
+    color: $body-text !important;
+    margin-bottom: 0;
+    font-size: 18px;
   }
 }

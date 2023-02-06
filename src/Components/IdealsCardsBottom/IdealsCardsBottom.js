@@ -1,11 +1,10 @@
 import React from 'react';
 import './_ideals-cards-bottom.scss';
 import MultiColumn, { IconCard } from '../MultiColumn/MultiColumn';
-import { ColorCard } from '../TwoColumn/TwoColumn';
 import TwoColumn from '../TwoColumn/TwoColumn';
+import Project from '../Project/Project';
 
-import { GiInterceptorShip } from 'react-icons/gi';
-import { IoIosColorPalette } from 'react-icons/io';
+import { Frangrowth } from '../ProjectImports/ProjectImports'
 
 export function IdealsCard(props) {
   const {
@@ -33,31 +32,40 @@ function IdealsCardsBottom() {
   return (
     <div className='ideals-cards'>
       <TwoColumn columns={[         
-        <ColorCard 
-          color='secondary'
-          style='fade'
+        <Project 
+          image={ Frangrowth.props.image }
+          title={ Frangrowth.props.title }
+          description={ Frangrowth.props.description }
+          liveSiteLink={ Frangrowth.props.liveSiteLink }
+          button_color='primary'
+          button_size='medium'
+          padding='regular'
         />
         ,
         <MultiColumn 
           columns={[
-            <IconCard 
-              icon={<GiInterceptorShip size={52} className='about-icon'/>}
-              title='Dynamism'
-              text="Who says performant can't also be beautiful? I can turn any concept, i.e. Figma, into a beautiful and fully realized UI."
+            <IconCard      
+              icon={<span class="material-symbols-sharp">support_agent</span>}         
+              title='Support'
+              text="Just because the site is done, doesn't mean we aren't friends anymore. I've got your back and am always here to help answer questions and keep you up and running."
             />,
-            <IconCard 
-              icon={<IoIosColorPalette  size={52} className='about-icon'/>}
-              title='Design'
-              text="Applying feedback to my work is an invaluable part of my process. You can't learn anything new or grow if there's no external information coming in."
+            <IconCard        
+              icon={<span class="material-symbols-sharp">savings</span>}       
+              title='Cost'
+              text="I go toe to toe with leaders in the industry in every way, but not when it comes to your wallet. Drop me a line for pricing details."
             />
           ]}
           columnStyle='icon-card'
-          columnCount={2}
+          columnCount='two-column'
           columnGap='xxs'
           columnPadding='xxs'
         />
       ]} 
-      column_gap='xxl'
+      column_gap='large'
+      show_first_bg_card_={false}
+      first_bg_card_color='secondary'
+      show_second_bg_card_={true}
+      second_bg_card_color='primary'
       />
     </div>
   )

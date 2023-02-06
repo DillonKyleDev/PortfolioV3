@@ -1,11 +1,10 @@
 import React from 'react';
 import './_ideals-cards-top.scss';
 import MultiColumn, { IconCard } from '../MultiColumn/MultiColumn';
-import { ColorCard } from '../TwoColumn/TwoColumn';
 import TwoColumn from '../TwoColumn/TwoColumn';
+import Project from '../Project/Project';
 
-import { VscColorMode } from 'react-icons/vsc';
-import { RiMessage2Line } from 'react-icons/ri';
+import { Beck } from '../ProjectImports/ProjectImports'
 
 
 function IdealsCardsTop() {
@@ -16,28 +15,37 @@ function IdealsCardsTop() {
         <MultiColumn 
           columns={[
             <IconCard 
-              icon={<VscColorMode  size={52} fill='#19192a'/>}
-              title='Accessibility'
-              text='I use tools like Chrome Access Assistant and color.a11y.com to ensure my projects are easy to use for everyone.'
+              icon={<span class="material-symbols-sharp">calendar_month</span>}
+              title='Timeline'
+              text="You have a tight deadline and you need someone who can deliver quickly and effectively. I understand that blockers are every development cycle's worst enemy so I address those concerns before they become problems."
             />,
             <IconCard 
-              icon={<RiMessage2Line  size={52} fill='#19192a'/>}
+              icon={<span class="material-symbols-sharp">chat</span>}
               title='Feedback'
-              text="Applying feedback to my work is an invaluable part of my process. You can't learn anything new or grow if there's no external information coming in."
+              text="It takes feedback and iteration to make something truly special. I work directly with designers and implimenters to get the results you're looking for."
             />
           ]}
           columnStyle='icon-card'
-          columnCount={2}
+          columnCount='two-column'
           columnGap='xxs'
           columnPadding='xxs'
         />
         ,
-        <ColorCard 
-          color='primary'
-          style='fade'
+        <Project 
+          image={ Beck.props.image }
+          title={ Beck.props.title }
+          description={ Beck.props.description }
+          liveSiteLink={ Beck.props.liveSiteLink }
+          button_color='primary'
+          button_size='large'          
+          padding='regular'
         />
       ]} 
-      column_gap='xxl'
+      column_gap='large'
+      show_first_bg_card_={ true }
+      first_bg_card_color='secondary-light'
+      show_second_bg_card_={ false }
+      second_bg_card_color='primary'
       />
     </div>
   )

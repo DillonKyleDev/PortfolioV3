@@ -28,12 +28,26 @@
 
   &--dark {  
     background-color: white;
-    border: solid $neutral--dark 2px;
+    border: solid white 2px;
     color: $neutral--dark;
 
     &:hover {
-      background-color: white;
-      color: black;
+      background-color: $secondary;
+      color: white;
+      border-color: solid 2px white;
+      box-shadow: $shadow--level-3;
+    }
+  }
+
+  &--white {
+    background-color: white;
+    border: solid white 2px;
+    color: $primary;
+
+    &:hover {
+      background-color: $primary;
+      border-color: $primary;
+      color: white;
       box-shadow: $shadow--level-3;
     }
   }
@@ -55,15 +69,15 @@
   // sizes  //
   ////////////
 
-  &__small {
+  &--small {
     padding: 0.5rem .5rem;
   }
 
-  &__medium {
+  &--medium {
     padding: 0.75rem 1rem;
   }
 
-  &__large {
+  &--large {
     padding: 1rem 1.3rem;
   }
 

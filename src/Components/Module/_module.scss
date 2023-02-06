@@ -63,7 +63,7 @@
       transform: rotateY(180deg);
             
       svg {
-        transform: scaleY(8) translateY(12%) translateX(-20%);
+        transform: scaleY(8) translateY(12%);
       }
     }
 
@@ -231,7 +231,7 @@
   }
 
   &__section-header {
-    margin-bottom: $padding--small;
+    margin-bottom: $padding--medium;
 
     &--align-left {
       &,* {
@@ -243,6 +243,8 @@
       &,* {
         text-align: right;
       }
+
+      margin-left: auto;
     }
 
     &--align-center {
@@ -250,5 +252,9 @@
         text-align: center;
       }
     }    
+
+    &--width-half {
+      width: 60%;
+    }
   }
 }

@@ -17,7 +17,8 @@ function HeroContainer() {
         <MenuButton buttonText='See more' 
           href='#about'
           style={{
-            buttonColor: 'primary'
+            buttonColor: 'primary',
+            buttonSize: 'large'
           }}
           icon='arrow' />        
       </div>

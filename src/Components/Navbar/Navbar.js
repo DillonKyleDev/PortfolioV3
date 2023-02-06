@@ -10,7 +10,7 @@ function Navbar() {
   return (
       <div className='navbar'>
         <a className='navbar__logo' href="#hero" onClick={() => setSelected('top')}>
-          <IoRocketSharp size={45}/>
+          <IoRocketSharp size={45}/><h2 className='navbar__logo-text'>DK</h2>
         </a>
         <div className='navbar__menu-items'>
           <MenuButton buttonText='About' 

@@ -15,7 +15,7 @@ function MenuButton(props) {
     } = props;
 
   return (
-    <a href={`${ href }`} className={`menu-button menu-button--${ style.buttonColor } menu-button--${ style.buttonSize } menu-button--${ icon }`} onClick={ onClick }>
+    <a href={`${ href }`} className={`menu-button menu-button--${ style.buttonColor } menu-button--${ style.buttonSize }`} onClick={ onClick }>
       { buttonText }
       { icon == 'arrow' && <FiArrowRight /> }
     </a>

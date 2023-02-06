@@ -10,15 +10,19 @@ export function IconCard(props) {
   } = props;
 
   return (
-    <div className='icon-card'>
-      <div className='icon-card__icon'>
-        { icon }
-      </div>
+    <div className='icon-card-spacing'>
+      <div className='icon-card'>
+        { icon && 
+          <div className='icon-card__icon'>
+            { icon }
+          </div>
+        }
 
-      <h2 className='icon-card__title'>{ title }</h2>
-      <p className="icon-card__text">
-        { text }
-      </p>
+        <h2 className='icon-card__title'>{ title }</h2>
+        <p className="icon-card__text">
+          { text }
+        </p>
+      </div>
     </div>
   )
 }
@@ -33,7 +37,7 @@ function MultiColumn(props) {
   } = props;
 
   return (
-    <div className={`multi-column multi-column--${ columnStyle } multi-column--${columnCount} multi-column--spacing-${columnGap} multi-column--padding-${columnPadding}`}>
+    <div className={`multi-column multi-column--${ columnStyle } multi-column--${columnCount} multi-column--spacing-${columnGap} multi-column--padding-${columnPadding}`}>      
       {columns}
     </div>
   )

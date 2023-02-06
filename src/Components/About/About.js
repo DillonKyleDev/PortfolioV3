@@ -1,5 +1,7 @@
 import React from 'react';
 import TwoColumn from '../TwoColumn/TwoColumn';
+import MultiColumn from '../MultiColumn/MultiColumn';
+import { IconCard } from '../MultiColumn/MultiColumn';
 import './_about.scss';
 
 
@@ -10,24 +12,51 @@ function About() {
       <TwoColumn columns={[         
         <div className='about__text-column'>
           <div className='about__header-container'>
-            <h1 className='about__header'>ABOUT</h1>
+            <h1 className='about__header'>Who is he?</h1>
             <div className='about__underline'/>
           </div> 
 
           <div className='about__bio-text'>
-            <p className='large'>
-              My primary goal as a Web Developer is to make tools that empower people to do what they love in new and exciting ways. 
-              Software engineers have the ability to bring convenience and accessibility to everyone and I strongly believe it is our responsibilty to do so.
+            <p className='about__bio-text--top large'>
+              A <a class='hubspot' target='_blank' href='https://www.hubspot.com/'>Hubspot</a> developer with a wide range skills and experience.  Dillon has been a one-stop shop for <u>individuals</u> - filling in as designer, developer and implementater - as well as working in smaller <u>teams</u> as the developer alongside designers and implementers.
             </p>
-            <p className='large'>
-              But bringing tools to everyone is a big task, and I'm always looking for ways to improve experiences. Here are some of the things I keep in mind 
-              when creating user interfaces:
+            <p className='about__bio-text--bottom large'>
+              Dillon is currently enjoying mastering the <a class='hubspot' target='_blank' href='https://www.hubspot.com/'>Hubspot</a> ecosystem but is always sharpening his skills, ready for whatever might come his way.
             </p>
           </div>
         </div>
         ,
-        <div></div>
-      ]} />
+        <MultiColumn 
+          columns={[
+            <IconCard 
+              title='Hubspot'
+              text='A world-class Content Management System.'
+            />,
+            <IconCard 
+              title='React'
+              text='Efficiently rendering your apps.'
+            />,
+            <IconCard 
+              title='Front-end'
+              text='Your first impression wizard.'
+            />,
+            <IconCard 
+              title='Communicator'
+              text="Let's talk! We'll figure it out together."
+            />
+          ]}
+          columnStyle='icon-card'
+          columnCount='two-column'
+          columnGap='xxs'
+          columnPadding='xxs'
+        />
+      ]}
+      column_gap='large'
+      show_first_bg_card_={false}
+      first_bg_card_color
+      show_second_bg_card_={false}
+      second_bg_card_color
+      />
 
       {/* <div className='divider-container'>
         <div className='divider-1' />
