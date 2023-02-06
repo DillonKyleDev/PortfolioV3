@@ -39,10 +39,10 @@ const Content = () => {
           text_color: 'on-dark',
           constrain: 'xxl',
           top_padding: 'xxl',
-          bottom_padding: 'xxl',
-          background_color: 'secondary-light',
+          bottom_padding: 'xxxl',
+          background_color: 'secondary',
           show_background_svg_: true,       
-          svg_color: 'secondary',
+          svg_color: 'secondary-light',
           background_svg_side: 'bottom-right',
           hide_overflow_: true,
         }} 
@@ -79,11 +79,11 @@ const Content = () => {
         content={<IdealsCardsBottom />}
         sectionHeader={
           <div>
-            <h2 className='display--2'>
-              You're not getting rid of me that easily.
+            <h2 className='ideal-cards-bottom__section-header display--2'>
+              <span>You need a website.</span>
             </h2>
             <p className='large'>
-              After a launch, you may have questions. I have a dedicated post-launch support window to make sure things go smoothly and you get the help and answers you need.
+              Let's face it. Why else would you be here? But you don't want just any website. You want <em>your</em> website.
             </p>
           </div>
         }
@@ -109,7 +109,7 @@ const Content = () => {
               Convinced yet?
             </h2>
             <p className='large'>
-              Well don't take my word for it. Here are a few of my favorite builds. Let them do the talking.
+              Well don't take my word for it. Here are a few of my favorites. Let them do the talking.
             </p>
           </div>
         }
@@ -123,6 +123,9 @@ const Content = () => {
               button_color='primary'
               button_size='medium'
               padding='small'
+              overlay_strength='dark'
+              info_position='between'
+              card_radius='large'
             />,
             <Project 
               image={ Beck.props.image }
@@ -132,6 +135,9 @@ const Content = () => {
               button_color='primary'
               button_size='medium'
               padding='small'
+              overlay_strength='dark'
+              info_position='between'   
+              card_radius='large'           
             />,
             <Project 
               image={ Beck.props.image }
@@ -141,6 +147,9 @@ const Content = () => {
               button_color='white'
               button_size='medium'
               padding='small'
+              overlay_strength='dark'  
+              info_position='between'  
+              card_radius='large'          
             />,
             <Project 
               image={ Beck.props.image }
@@ -150,6 +159,9 @@ const Content = () => {
               button_color='white'
               button_size='medium'
               padding='small'
+              overlay_strength='dark' 
+              info_position='between'  
+              card_radius='large'           
             />
           ]}
           columnStyle='project-card'
@@ -159,7 +171,7 @@ const Content = () => {
         />}
         style={{
           header_alignment: 'left',
-          header_width: 'half',
+          header_width: 'one-third',
           show_section_header_: true,
           text_color: 'on-dark',
           constrain: 'xxl',
@@ -170,6 +182,33 @@ const Content = () => {
           svg_color: 'secondary',
           background_svg_side: 'top-left',
           hide_overflow_: true,     
+        }} 
+      />
+
+      <Module 
+        content={<IdealsCardsBottom />}
+        sectionHeader={
+          <div>
+            <h2 className='ideal-cards-bottom__section-header display--2'>
+              <span>You're not getting rid</span><span> of me that easily.</span>
+            </h2>
+            <p className='large'>
+              After a launch, you may have questions. I have a dedicated post-launch support window to make sure things go smoothly and you get the help and answers you need.
+            </p>
+          </div>
+        }
+        style={{
+          header_alignment: 'right',
+          header_width: 'half',
+          show_section_header_: true,
+          text_color: 'on-light',          
+          constrain: 'xxl',
+          top_padding: 'xxl',
+          bottom_padding: 'xxxl',
+          background_color: 'transparent',
+          show_background_svg_: false,       
+          svg_color: 'secondary-light',
+          background_svg_side: 'bottom-left',        
         }} 
       />
 

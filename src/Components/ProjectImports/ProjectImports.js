@@ -16,7 +16,7 @@ export const Frangrowth =
 <Project 
   image={ frangrowth }
   title='Frangrowth'
-  description='A rebranding for Frangrowth and a jump start of their SEO.'
+  description='A rebranding for Frangrowth and a jump start to their SEO.'
   tags={['']}
   liveSiteLink='https://www.frangrowth.co/' />
 

@@ -18,7 +18,7 @@ function About() {
 
           <div className='about__bio-text'>
             <p className='about__bio-text--top large'>
-              A <a class='hubspot' target='_blank' href='https://www.hubspot.com/'>Hubspot</a> developer with a wide range skills and experience.  Dillon has been a one-stop shop for <u>individuals</u> - filling in as designer, developer and implementater - as well as working in smaller <u>teams</u> as the developer alongside designers and implementers.
+              A <a class='hubspot' target='_blank' href='https://www.hubspot.com/'>Hubspot</a> developer with a wide range skills and experience.  Dillon has been a <u>one-stop shop</u> for individuals - working as designer, developer and implementor - as well as worked in smaller <u>teams</u> as a developer alongside designers and implementers.
             </p>
             <p className='about__bio-text--bottom large'>
               Dillon is currently enjoying mastering the <a class='hubspot' target='_blank' href='https://www.hubspot.com/'>Hubspot</a> ecosystem but is always sharpening his skills, ready for whatever might come his way.
@@ -51,17 +51,13 @@ function About() {
           columnPadding='xxs'
         />
       ]}
-      column_gap='large'
+      column_gap='xxl'
+      vertical_align='middle'
       show_first_bg_card_={false}
       first_bg_card_color
       show_second_bg_card_={false}
-      second_bg_card_color
+      second_bg_card_color      
       />
-
-      {/* <div className='divider-container'>
-        <div className='divider-1' />
-        <div className='divider-2' />
-      </div> */}
     </div>
   )
 }

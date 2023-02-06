@@ -255,6 +255,14 @@
 
     &--width-half {
       width: 60%;
+
+      @media (min-width: $viewport-tablet--min) {
+        width: 50%;
+      }
+    }
+
+    &--width-one-third {
+      width: 45%
     }
   }
 }

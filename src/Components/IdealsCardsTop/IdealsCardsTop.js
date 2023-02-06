@@ -39,9 +39,13 @@ function IdealsCardsTop() {
           button_color='primary'
           button_size='large'          
           padding='regular'
+          overlay_strength='medium'
+          info_position='bottom'  
+          card_radius='small'
         />
       ]} 
       column_gap='large'
+      vertical_align='top'
       show_first_bg_card_={ true }
       first_bg_card_color='secondary-light'
       show_second_bg_card_={ false }

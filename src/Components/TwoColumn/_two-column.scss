@@ -4,11 +4,11 @@
   display: flex;
   flex-direction: column;
   justify-content: stretch;
+  row-gap: $padding--xs;
 
-  @media (min-width: $viewport-tablet--min) {
+  @media (min-width: $viewport-laptop--min) {
     flex-direction: row;
-    row-gap: $padding--small;
-    align-items: center;
+    row-gap: $padding--small;    
 
     // Spacing
 
@@ -49,17 +49,42 @@
       width: 50%;
     }
   }
+
+  &--vertical-align {
+    &-top {
+      align-items: flex-start;
+    }
+
+    &-middle {
+      align-items: center;
+    }
+
+    &-bottom {
+      align-items: flex-end;
+    }
+  }
 }
 
   
 .color-card {
   position: absolute;
-  top: 33%;
-  bottom: -50%;
+  top: $padding--small;
+  bottom: calc($padding--large * -1);
   left: 15%;
-  right: 15%;
+  right: -15%;
   border-radius: 3px;  
   z-index: -1;
+  box-shadow: $shadow--level-1;
+
+  &--right {
+    left: $padding--small;
+    right: calc($padding--small * -1);;
+  }
+
+  &--left {
+    right: $padding--small;
+    left: calc($padding--small * -1);;
+  }
 
   > div {
     position: relative;
@@ -68,12 +93,6 @@
   }
 
   .color-card__background-color {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-  }
-
-  .color-card__fade {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -95,9 +114,5 @@
     &--secondary-dark {
       background-color: $secondary--dark;
     }
-  }
-
-  &__fade {
-    background: $gradient--white;
   }
 }

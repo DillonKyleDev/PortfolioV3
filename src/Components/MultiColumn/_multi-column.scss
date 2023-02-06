@@ -3,24 +3,21 @@
 .multi-column {
   display: flex;
   flex-direction: column;
+  row-gap: $padding--xxxs;
   height: 100%;
 
   @media (min-width: $viewport-tablet--min) {
     flex-direction: row;
     flex-wrap: wrap;
 
-    // Column Types
-    
-    &--icon-card {
-
-    }
 
     // Row Counts
 
     &--two-column {
       column-count: 2;
       width: calc(100% + 20px);
-      margin: 0 -10px;
+      height: calc(100% + 20px);
+      margin: -10px -10px;
 
       > div {
         box-sizing: border-box;
@@ -35,88 +32,90 @@
     &--four-column {
       column-count: 4;
       width: calc(100% + 20px);
-      margin: 0 -10px;
+      height: calc(100% + 20px);
+      margin: -10px -10px;
 
       > div {
         box-sizing: border-box;
         width: 25%;
       }
     }
+  }
 
-    // Spacing
-    
-    &--spacing-xxxs {
-      > div {
-        padding: 5px
-      }
+  
+  // Spacing
+  
+  &--spacing-xxxs {
+    > div {
+      padding: 5px
     }
+  }
 
-    &--spacing-xxs {  
-      > div {
-        padding: 10px
-      }
+  &--spacing-xxs {  
+    > div {
+      padding: 10px
     }
-    
-    &--spacing-xs {
-      > div {
-        padding: 20px
-      }
+  }
+  
+  &--spacing-xs {
+    > div {
+      padding: 20px
     }
+  }
 
-    &--spacing-small {
-      > div {
-        padding: 30px
-      }
+  &--spacing-small {
+    > div {
+      padding: 30px
     }
+  }
 
-    &--spacing-medium {
-      > div {
-        padding: 45px
-      }
+  &--spacing-medium {
+    > div {
+      padding: 45px
     }
+  }
 
-    &--spacing-large {
-      > div {
-        padding: 60px
-      }
+  &--spacing-large {
+    > div {
+      padding: 60px
     }
+  }
 
-    // Padding
+  // Padding
 
-    &--padding-xxxs {
-      > div > div {
-        padding: $padding--xxxs;
-      }
-    }
-
-    &--padding-xxs {
+  &--padding-xxxs {
     > div > div {
-        padding: $padding--xxs;
-      }
+      padding: $padding--xxxs;
     }
-    
-    &--padding-xs {
-      > div > div {
-        padding: $padding--xs;
-      }
-    }
+  }
 
-    &--padding-small {
-      > div > div {
-        padding: $padding--small;
-      }
+  &--padding-xxs {
+  > div > div {
+      padding: $padding--xxs;
     }
-
-    &--padding-medium {
-      > div > div {
-        padding: $padding--medium;
-      }
+  }
+  
+  &--padding-xs {
+    > div > div {
+      padding: $padding--xs;
     }
+  }
 
-    &--padding-large {
-      > div > div {
-        padding: $padding--large;
-      }
+  &--padding-small {
+    > div > div {
+      padding: $padding--small;
+    }
+  }
+
+  &--padding-medium {
+    > div > div {
+      padding: $padding--medium;
+    }
+  }
+
+  &--padding-large {
+    > div > div {
+      padding: $padding--large;
     }
   }
 }
@@ -127,15 +126,16 @@
     display: flex;
   }
 
-  border: solid 1px $secondary--dark;  
+  // border: solid 1px $secondary--dark;  
   background-color: white;      
   border-radius: 3px;
-  box-shadow: $shadow--level-1;
+  overflow: hidden;
+  box-shadow: $shadow--level-4;
   transition: box-shadow 0.3s;  
   flex: 1;
 
   &:hover {
-    box-shadow: $shadow--level-4;
+    box-shadow: $shadow--level-1;
   }
 
   &__icon {

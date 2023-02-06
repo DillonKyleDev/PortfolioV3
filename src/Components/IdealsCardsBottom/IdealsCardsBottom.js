@@ -40,6 +40,9 @@ function IdealsCardsBottom() {
           button_color='primary'
           button_size='medium'
           padding='regular'
+          overlay_strength='medium'
+          info_position='bottom'  
+          card_radius='small'
         />
         ,
         <MultiColumn 
@@ -52,7 +55,7 @@ function IdealsCardsBottom() {
             <IconCard        
               icon={<span class="material-symbols-sharp">savings</span>}       
               title='Cost'
-              text="I go toe to toe with leaders in the industry in every way, but not when it comes to your wallet. Drop me a line for pricing details."
+              text="I go toe-to-toe with leaders in the industry in every way, but not when it comes to your wallet. Drop me a line for pricing details."
             />
           ]}
           columnStyle='icon-card'
@@ -62,6 +65,7 @@ function IdealsCardsBottom() {
         />
       ]} 
       column_gap='large'
+      vertical_align='top'
       show_first_bg_card_={false}
       first_bg_card_color='secondary'
       show_second_bg_card_={true}
