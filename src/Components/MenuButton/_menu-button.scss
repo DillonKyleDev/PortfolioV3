@@ -59,6 +59,7 @@
 
     &:hover {
       background-color: white;
+      border: solid white 2px;
       color: $primary;
       box-shadow: $shadow--level-3;
     }

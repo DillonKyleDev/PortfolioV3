@@ -18,7 +18,7 @@ function About() {
 
           <div className='about__bio-text'>
             <p className='about__bio-text--top large'>
-              A <a class='hubspot' target='_blank' href='https://www.hubspot.com/'>Hubspot</a> developer with a wide range skills and experience.  Dillon has been a <u>one-stop shop</u> for individuals - working as designer, developer and implementor - as well as worked in smaller <u>teams</u> as a developer alongside designers and implementers.
+              A Hubspot developer with a wide range skills and experience.  Dillon has been a <u>one-stop shop</u> for individuals - working as designer, developer and implementor - as well as worked in smaller <u>teams</u> as a developer alongside designers and implementers.
             </p>
             <p className='about__bio-text--bottom large'>
               Dillon is currently enjoying mastering the <a class='hubspot' target='_blank' href='https://www.hubspot.com/'>Hubspot</a> ecosystem but is always sharpening his skills, ready for whatever might come his way.

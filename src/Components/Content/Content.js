@@ -6,9 +6,10 @@ import Footer from '../Footer/Footer';
 import HeroContainer from '../HeroContainer/HeroContainer';
 import '../About/_about.scss';
 
-import IdealsCardsBottom from '../IdealsCardsBottom/IdealsCardsBottom';
 import IdealsCardsTop from '../IdealsCardsTop/IdealsCardsTop';
-import MultiColumn from '../MultiColumn/MultiColumn';
+import IdealsCardsBottom from '../IdealsCardsBottom/IdealsCardsBottom';
+import IdealsCardsFinal from '../IdealsCardsFinal/IdealsCardsFinal';
+import MultiColumn, { ProjectCard } from '../MultiColumn/MultiColumn';
 import Project from '../Project/Project';
 
 import { Beck } from '../ProjectImports/ProjectImports'
@@ -49,6 +50,34 @@ const Content = () => {
       />
 
       <Module 
+        content={<IdealsCardsBottom />}
+        sectionHeader={
+          <div>
+            <h2 className='ideal-cards-bottom__section-header display--2'>
+              <span>You need a website.</span>
+            </h2>
+            <p className='large'>
+              Let's face it. Why else would you be here? But you don't want just any website. You want a website that will support your strategy and your customers.
+            </p>
+          </div>
+        }
+        style={{
+          header_alignment: 'left',
+          header_width: 'half',
+          show_section_header_: true,
+          text_color: 'on-light',          
+          constrain: 'xxl',
+          top_padding: 'xxl',
+          bottom_padding: 'xl',
+          background_color: 'transparent',
+          show_background_svg_: false,       
+          svg_color: 'secondary-light',
+          background_svg_side: 'bottom-left',        
+        }} 
+      />
+
+      
+      <Module 
         content={<IdealsCardsTop />}
         sectionHeader={
           <div>
@@ -61,44 +90,17 @@ const Content = () => {
           </div>
         }
         style={{
-          header_alignment: 'left',
+          header_alignment: 'right',
           header_width: 'half',
           show_section_header_: true,
           text_color: 'on-light',
           constrain: 'xxl',
-          top_padding: 'xxl',
+          top_padding: 'large',
           bottom_padding: 'xxl',
           background_color: 'transparent',
           show_background_svg_: false,       
           svg_color: 'primary',
           background_svg_side: 'top-left',
-        }} 
-      />
-
-      <Module 
-        content={<IdealsCardsBottom />}
-        sectionHeader={
-          <div>
-            <h2 className='ideal-cards-bottom__section-header display--2'>
-              <span>You need a website.</span>
-            </h2>
-            <p className='large'>
-              Let's face it. Why else would you be here? But you don't want just any website. You want <em>your</em> website.
-            </p>
-          </div>
-        }
-        style={{
-          header_alignment: 'right',
-          header_width: 'half',
-          show_section_header_: true,
-          text_color: 'on-light',          
-          constrain: 'xxl',
-          top_padding: 'xxl',
-          bottom_padding: 'xxxl',
-          background_color: 'transparent',
-          show_background_svg_: false,       
-          svg_color: 'secondary-light',
-          background_svg_side: 'bottom-left',        
         }} 
       />
 
@@ -115,53 +117,29 @@ const Content = () => {
         }
         content={<MultiColumn 
           columns={[
-            <Project 
+            <ProjectCard
               image={ Beck.props.image }
               title={ Beck.props.title }
               description={ Beck.props.description }
               liveSiteLink={ Beck.props.liveSiteLink }
-              button_color='primary'
-              button_size='medium'
-              padding='small'
-              overlay_strength='dark'
-              info_position='between'
-              card_radius='large'
             />,
-            <Project 
+            <ProjectCard 
               image={ Beck.props.image }
               title={ Beck.props.title }
               description={ Beck.props.description }
-              liveSiteLink={ Beck.props.liveSiteLink }
-              button_color='primary'
-              button_size='medium'
-              padding='small'
-              overlay_strength='dark'
-              info_position='between'   
-              card_radius='large'           
+              liveSiteLink={ Beck.props.liveSiteLink }      
             />,
-            <Project 
+            <ProjectCard 
               image={ Beck.props.image }
               title={ Beck.props.title }
               description={ Beck.props.description }
-              liveSiteLink={ Beck.props.liveSiteLink }
-              button_color='white'
-              button_size='medium'
-              padding='small'
-              overlay_strength='dark'  
-              info_position='between'  
-              card_radius='large'          
+              liveSiteLink={ Beck.props.liveSiteLink }       
             />,
-            <Project 
+            <ProjectCard 
               image={ Beck.props.image }
               title={ Beck.props.title }
               description={ Beck.props.description }
-              liveSiteLink={ Beck.props.liveSiteLink }
-              button_color='white'
-              button_size='medium'
-              padding='small'
-              overlay_strength='dark' 
-              info_position='between'  
-              card_radius='large'           
+              liveSiteLink={ Beck.props.liveSiteLink }       
             />
           ]}
           columnStyle='project-card'
@@ -186,7 +164,7 @@ const Content = () => {
       />
 
       <Module 
-        content={<IdealsCardsBottom />}
+        content={<IdealsCardsFinal />}
         sectionHeader={
           <div>
             <h2 className='ideal-cards-bottom__section-header display--2'>
@@ -204,7 +182,36 @@ const Content = () => {
           text_color: 'on-light',          
           constrain: 'xxl',
           top_padding: 'xxl',
-          bottom_padding: 'xxxl',
+          bottom_padding: 'xxl',
+          background_color: 'transparent',
+          show_background_svg_: false,       
+          svg_color: 'secondary-light',
+          background_svg_side: 'bottom-left',        
+        }} 
+      />
+
+      <Module 
+        sectionHeader={
+          <div>
+            <h2 className='ideal-cards-bottom__section-header display--2'>
+              Everyone needs a website these days.
+            </h2>
+            <h2 className='ideal-cards-bottom__section-header display--2'>
+              Do you have one you can be proud of?
+            </h2>
+            <p className='large'>
+              Thanks for stopping by!
+            </p>
+          </div>
+        }
+        style={{
+          header_alignment: 'left',
+          header_width: 'full',
+          show_section_header_: true,
+          text_color: 'on-light',          
+          constrain: 'xxl',
+          top_padding: 'large',
+          bottom_padding: 'small',
           background_color: 'transparent',
           show_background_svg_: false,       
           svg_color: 'secondary-light',

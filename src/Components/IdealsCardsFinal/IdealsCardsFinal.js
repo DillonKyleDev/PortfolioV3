@@ -1,5 +1,5 @@
 import React from 'react';
-import './_ideals-cards-bottom.scss';
+import './_ideals-cards-final.scss';
 import MultiColumn, { IconCard } from '../MultiColumn/MultiColumn';
 import TwoColumn from '../TwoColumn/TwoColumn';
 import Project from '../Project/Project';
@@ -48,14 +48,14 @@ function IdealsCardsBottom() {
         <MultiColumn 
           columns={[
             <IconCard      
-              icon={<span class="material-symbols-sharp">videogame_asset</span>}         
-              title='Strategy'
-              text="What do you want to say to customers who land on your site? What should they do once they get here?"
+              icon={<span class="material-symbols-sharp">support_agent</span>}         
+              title='Support'
+              text="Just because the site is done, doesn't mean we aren't friends anymore. I've got your back and am always here to help answer questions and keep you up and running."
             />,
             <IconCard        
-              icon={<span class="material-symbols-sharp">rocket_launch</span>}       
-              title='Accessibility'
-              text="No matter who it is that finds you, their experience has to be frictionless and enjoyable, otherwise they won't stick around long enough for strategy to matter."
+              icon={<span class="material-symbols-sharp">savings</span>}       
+              title='Cost'
+              text="I go toe-to-toe with leaders in the industry in every way, but not when it comes to your wallet. Drop me a line for pricing details."
             />
           ]}
           columnStyle='icon-card'

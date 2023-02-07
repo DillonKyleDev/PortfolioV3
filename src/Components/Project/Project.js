@@ -25,7 +25,7 @@ function Project(props) {
               </div>
               
               <MenuButton 
-                buttonText='Visit site'
+                buttonText='View site'
                 href=''
                 style={{
                   buttonColor: button_color,

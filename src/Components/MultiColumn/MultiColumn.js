@@ -1,4 +1,5 @@
 import React from 'react';
+import MenuButton from '../MenuButton/MenuButton';
 import './_multi-column.scss';
 
 
@@ -26,6 +27,49 @@ export function IconCard(props) {
     </div>
   )
 }
+
+export function ProjectCard(props) {
+  const {
+    image,
+    title,
+    description,
+    liveSiteLink
+  } = props;
+  
+  return (
+    <a className='project-card-spacing' herf={ liveSiteLink }>
+      <div className='project-card'>
+        { image && 
+          <div className='project-card__image'>
+            <img src={ image } />          
+            <div className='project-card__image-overlay'></div>
+            <div className='project-card__image-glare'></div>
+          </div>
+        }
+
+        <div className='project-card__text'>
+          <div className='project-card__text--top'>
+            <h2 className='project-card__title'>{ title }</h2>
+            <p className="project-card__description">
+              { description }
+            </p>
+          </div>
+
+          <div className='project-card__text--bottom'>
+            <MenuButton buttonText='View Site' 
+              href=''
+              style={{
+                buttonColor: 'primary',
+                buttonSize: 'small'
+              }}              
+            />  
+          </div>
+        </div>        
+      </div>
+    </a>
+  )
+}
+
 
 function MultiColumn(props) {
   const {
