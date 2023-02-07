@@ -65,6 +65,18 @@
     }
   }
 
+  &--primary-stroke {  
+    background-color: $primary;
+    border: solid $primary 2px;
+    color: white;
+
+    &:hover {
+      background-color: white;
+      color: $primary;
+      box-shadow: $shadow--level-3;
+    }
+  }
+
 
   ////////////
   // sizes  //
@@ -88,10 +100,8 @@
   ////////////
 
 
-  &--arrow {
-    svg {
-      transform: scale(1.2) translateY(2px) translateX(4px) rotate(90deg);
-      transition: transform 0.2s;      
-    }
+  svg {
+    transform: scale(1.2) translateY(2px) translateX(4px) rotate(90deg);
+    transition: transform 0.2s;      
   }
 }

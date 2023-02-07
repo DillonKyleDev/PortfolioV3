@@ -40,7 +40,7 @@ const Content = () => {
           text_color: 'on-dark',
           constrain: 'xxl',
           top_padding: 'xxl',
-          bottom_padding: 'xxxl',
+          bottom_padding: 'xxl',
           background_color: 'secondary',
           show_background_svg_: true,       
           svg_color: 'secondary-light',
@@ -95,7 +95,7 @@ const Content = () => {
           show_section_header_: true,
           text_color: 'on-light',
           constrain: 'xxl',
-          top_padding: 'large',
+          top_padding: 'small',
           bottom_padding: 'xxl',
           background_color: 'transparent',
           show_background_svg_: false,       
@@ -168,7 +168,7 @@ const Content = () => {
         sectionHeader={
           <div>
             <h2 className='ideal-cards-bottom__section-header display--2'>
-              <span>You're not getting rid</span><span> of me that easily.</span>
+              You're not getting rid of me that easily.
             </h2>
             <p className='large'>
               After a launch, you may have questions. I have a dedicated post-launch support window to make sure things go smoothly and you get the help and answers you need.
@@ -193,11 +193,11 @@ const Content = () => {
       <Module 
         sectionHeader={
           <div>
-            <h2 className='ideal-cards-bottom__section-header display--2'>
+            <h2 className='pitch-close__section-header display--2'>
               Everyone needs a website these days.
             </h2>
-            <h2 className='ideal-cards-bottom__section-header display--2'>
-              Do you have one you can be proud of?
+            <h2 className='pitch-close__section-header display--2'>
+              Does yours suit <span class='pitch-close__emphasis'>your</span> needs?
             </h2>
             <p className='large'>
               Thanks for stopping by!
@@ -210,8 +210,8 @@ const Content = () => {
           show_section_header_: true,
           text_color: 'on-light',          
           constrain: 'xxl',
-          top_padding: 'large',
-          bottom_padding: 'small',
+          top_padding: 'small',
+          bottom_padding: 'xl',
           background_color: 'transparent',
           show_background_svg_: false,       
           svg_color: 'secondary-light',

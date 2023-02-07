@@ -18,7 +18,7 @@ function About() {
 
           <div className='about__bio-text'>
             <p className='about__bio-text--top large'>
-              A Hubspot developer with a wide range skills and experience.  Dillon has been a <u>one-stop shop</u> for individuals - working as designer, developer and implementor - as well as worked in smaller <u>teams</u> as a developer alongside designers and implementers.
+              A React and Hubspot developer with a wide range skills and experience.  Dillon has been a <u>one-stop shop</u> for individuals - working as designer, developer and implementor - as well as worked on smaller <u>teams</u> as a developer alongside other devs, designers and implementers.
             </p>
             <p className='about__bio-text--bottom large'>
               Dillon is currently enjoying mastering the <a class='hubspot' target='_blank' href='https://www.hubspot.com/'>Hubspot</a> ecosystem but is always sharpening his skills, ready for whatever might come his way.
@@ -34,7 +34,7 @@ function About() {
             />,
             <IconCard 
               title='React'
-              text='Efficiently rendering your apps.'
+              text='Efficiently rendering your content.'
             />,
             <IconCard 
               title='Front-end'
@@ -52,7 +52,7 @@ function About() {
         />
       ]}
       column_gap='xxl'
-      vertical_align='middle'
+      vertical_align='stretch'
       show_first_bg_card_={false}
       first_bg_card_color
       show_second_bg_card_={false}

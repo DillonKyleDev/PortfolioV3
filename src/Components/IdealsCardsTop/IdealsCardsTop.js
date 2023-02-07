@@ -16,7 +16,7 @@ function IdealsCardsTop() {
           columns={[
             <IconCard 
               icon={<span class="material-symbols-sharp">calendar_month</span>}
-              title='Timeline'
+              title='Forecast'
               text="You have a tight deadline and you need someone who can deliver quickly and effectively. I understand that blockers are every development cycle's worst enemy so I address those concerns before they become problems."
             />,
             <IconCard 
