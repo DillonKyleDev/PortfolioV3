@@ -9,7 +9,7 @@ function Navbar() {
 
   return (
       <div className='navbar'>
-        <a className='navbar__logo' href="#hero" onClick={() => setSelected('top')}>
+        <a className='navbar__logo' href="#top">
           <IoRocketSharp size={45}/><h2 className='navbar__logo-text'>DK</h2>
         </a>
         <div className='navbar__menu-items'>
@@ -17,15 +17,13 @@ function Navbar() {
             href='#about' 
             style={{
               buttonColor: 'light'
-            }}
-            onClick={() => setSelected('about')}></MenuButton> 
+            }}></MenuButton> 
 
           <MenuButton buttonText='Projects' 
             href='#projects' 
             style={{
               buttonColor: 'light'
-            }}
-            onClick={() => setSelected('project')}></MenuButton> 
+            }}></MenuButton> 
         </div>
       </div>
   )

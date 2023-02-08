@@ -1,55 +1,39 @@
 @import '../Global/_variables.scss';
 
 .multi-column {
-  row-gap: $padding--xxxs;
-  column-gap: $padding--xxxs;
   height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  width: calc(100% + 20px);
+  height: calc(100% + 20px);
+  margin: -10px -10px;
+
+  > div, > a {
+    box-sizing: border-box; 
+    width: 100%;       
+  }
+  
+  &--two-column {
+    @media (min-width: $viewport-tablet--min) {    
+      > div, > a {
+        width: 50%;
+      }
+    }
+  }
 
   &--four-column {
-    width: calc(100% + 20px);
-    height: calc(100% + 20px);
-    margin: -10px -10px;
-
-    @media (min-width: $viewport-tablet--min) {
-      column-count: 2;
-      
-      > div {
-        box-sizing: border-box;
+    @media (min-width: $viewport-tablet--min) {    
+      > div, > a {
+        width: 50%;
       }
     }
 
-    @media (min-width: $viewport-hd--min) {
-      column-count: 4;
-      
-      > div {
-        box-sizing: border-box;
+    @media (min-width: $viewport-hd--min) {      
+      > div, > a {
+        width: 25%;
       }
     }
   }
-
-  @media (min-width: $viewport-tablet--min) {
-    flex-direction: row;
-    flex-wrap: wrap;
-
-    // Row Counts
-
-    &--two-column {
-      column-count: 2;
-      width: calc(100% + 20px);
-      height: calc(100% + 20px);
-      margin: -10px -10px;
-
-      > div {
-        box-sizing: border-box;        
-      }
-    }
-
-    &--three-column {
-      column-count: 3;
-    }
-  }
-
-
 
   
   // Spacing
@@ -188,7 +172,7 @@
 
   &:hover {
     cursor: pointer;
-    box-shadow: 50px 50px 0px 0px rgba(0,0,0,0.085);
+    box-shadow: $shadow--sharp;
     transform: translateY(-5px);
 
     .project-card__image-glare {      
@@ -204,8 +188,7 @@
   }
 
   &-spacing {
-    display: flex;
-    flex: 1;
+    display: flex;    
     background-color: transparent;
   }
 

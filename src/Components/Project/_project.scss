@@ -1,5 +1,10 @@
 @import '../Global/_variables.scss';
 
+#projects {
+  padding-top: 75px;
+  margin-top: -75px;
+}
+
 .project {
   &__photo {     
     position: relative;
@@ -8,8 +13,11 @@
     box-shadow: $shadow--level-4;
     overflow: hidden;
     border: none;
+    transition: box-shadow 0.3s;
 
     &:hover {
+      box-shadow: $shadow--sharp;
+
       .project__overlay {      
         opacity: 0.9;
       }
@@ -95,6 +103,10 @@
       .project__info--between {
         row-gap: $padding--xxxs;
         padding: $padding--xxs;
+
+        @media (min-width: $viewport-tablet--min) {
+          padding: $padding--xxs;
+        }
       }
     }
 
@@ -103,7 +115,11 @@
       .project__info--top,
       .project__info--between {
         row-gap: $padding--xxs;
-        padding: $padding--xs;
+        padding: $padding--xxs;
+
+        @media (min-width: $viewport-tablet--min) {
+          padding: $padding--xxs;
+        }
       }
     }
   }

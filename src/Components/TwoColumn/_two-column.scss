@@ -4,16 +4,19 @@
   display: flex;
   flex-direction: column;
   justify-content: stretch;
-  row-gap: $padding--small;    
+  row-gap: $padding--xs; 
+  
+  @media (min-width: $viewport-tablet--min) {
+    row-gap: $padding--small; 
+  }   
 
   &__column {
     position: relative;  
     width: 100%;   
   }
 
-  @media (min-width: $viewport-laptop--min) {
+  @media (min-width: 1280px) {
     flex-direction: row;
-    column-count: 1;
 
     &__column { 
       width: 50%;
@@ -22,7 +25,6 @@
 
   @media (min-width: $viewport-tablet--min) {
     // Spacing
-
     &--spacing-xxs {
       column-gap: $padding--xxs;
     }
@@ -58,7 +60,6 @@
 
   @media (min-width: $viewport-laptop--min) {
     // Spacing
-
     &--spacing-large {
       column-gap: $padding--small;
     }
@@ -112,6 +113,10 @@
     &-bottom {
       align-items: flex-end;
     }
+  }
+
+  .multi-column {
+
   }
 }
 

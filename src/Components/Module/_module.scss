@@ -307,12 +307,20 @@
 
     &--width-half {
       @media (min-width: $viewport-tablet--min) {
+        width: 80%;
+      }
+
+      @media (min-width: $viewport-laptop--min) {
         width: 60%;
       }
     }
 
     &--width-one-third {
       @media (min-width: $viewport-tablet--min) {
+        width: 60%;
+      }
+
+      @media (min-width: $viewport-laptop--min) {
         width: 45%;
       }
     }

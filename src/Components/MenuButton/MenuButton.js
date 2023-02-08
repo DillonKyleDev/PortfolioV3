@@ -10,12 +10,11 @@ function MenuButton(props) {
         buttonColor: 'light',
         buttonSize: 'medium',
       },
-      icon,
-      onClick,
+      icon
     } = props;
 
   return (
-    <a href={`${ href }`} className={`menu-button menu-button--${ style.buttonColor } menu-button--${ style.buttonSize }`} onClick={ onClick }>
+    <a href={`${ href }`} className={`menu-button menu-button--${ style.buttonColor } menu-button--${ style.buttonSize || 'medium' }`}>
       { buttonText }
       { icon == 'arrow' && <FiArrowRight /> }
     </a>

@@ -17,21 +17,26 @@ import { Beck } from '../ProjectImports/ProjectImports'
 
 const Content = () => {
   return (
-    <div className='content'>      
+    <div className='content'>  
+      <div id="top"></div>    
+
       <Module 
         content={<HeroContainer />} 
         style={{
           show_section_header_: false,
           text_color: 'on-light',
           constrain: 'xxl',
-          top_padding: 'xl',
-          bottom_padding: 'xxl',
+          top_padding: 'xxl',
+          bottom_padding: 'large',
           background_color: 'transparent',
           show_background_svg_: true,
           svg_color: 'secondary-light',
-          background_svg_side: 'top-right'
+          background_svg_side: 'top-right',
+          hide_overflow_: false,
         }} 
       />
+
+      <div id="about"></div>
 
       <Module 
         content={<About />} 
@@ -39,8 +44,8 @@ const Content = () => {
           show_section_header_: false,
           text_color: 'on-dark',
           constrain: 'xxl',
-          top_padding: 'xxl',
-          bottom_padding: 'xxl',
+          top_padding: 'xl',
+          bottom_padding: 'xxxl',
           background_color: 'secondary',
           show_background_svg_: true,       
           svg_color: 'secondary-light',
@@ -72,7 +77,8 @@ const Content = () => {
           background_color: 'transparent',
           show_background_svg_: false,       
           svg_color: 'secondary-light',
-          background_svg_side: 'bottom-left',        
+          background_svg_side: 'bottom-left',      
+          hide_overflow_: false, 
         }} 
       />
 
@@ -101,8 +107,11 @@ const Content = () => {
           show_background_svg_: false,       
           svg_color: 'primary',
           background_svg_side: 'top-left',
+          hide_overflow_: false,
         }} 
       />
+
+      <div id="projects"></div>
 
       <Module 
         sectionHeader={
@@ -186,7 +195,8 @@ const Content = () => {
           background_color: 'transparent',
           show_background_svg_: false,       
           svg_color: 'secondary-light',
-          background_svg_side: 'bottom-left',        
+          background_svg_side: 'bottom-left', 
+          hide_overflow_: false,       
         }} 
       />
 
@@ -200,7 +210,7 @@ const Content = () => {
               Does yours suit <span class='pitch-close__emphasis'>your</span> needs?
             </h2>
             <p className='large'>
-              Thanks for stopping by!
+              Thanks for visiting!
             </p>
           </div>
         }
@@ -210,12 +220,13 @@ const Content = () => {
           show_section_header_: true,
           text_color: 'on-light',          
           constrain: 'xxl',
-          top_padding: 'small',
-          bottom_padding: 'xl',
+          top_padding: 'medium',
+          bottom_padding: 'large',
           background_color: 'transparent',
           show_background_svg_: false,       
           svg_color: 'secondary-light',
           background_svg_side: 'bottom-left',        
+          hide_overflow_: false,
         }} 
       />
 

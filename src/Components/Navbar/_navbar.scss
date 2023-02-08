@@ -1,5 +1,10 @@
 @import '../Global/_variables.scss';
 
+#top {
+  position: absolute;
+  top: 0;
+}
+
 .navbar {
   padding: 15px 30px;
   background-color: $secondary;

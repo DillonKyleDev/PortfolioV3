@@ -8,7 +8,7 @@ import './_about.scss';
 function About() {
   
   return (
-    <div id="about" className='about'>
+    <div className='about'>
       <TwoColumn columns={[         
         <div className='about__text-column'>
           <div className='about__header-container'>

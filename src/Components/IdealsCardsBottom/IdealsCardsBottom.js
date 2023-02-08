@@ -38,7 +38,7 @@ function IdealsCardsBottom() {
           description={ Frangrowth.props.description }
           liveSiteLink={ Frangrowth.props.liveSiteLink }
           button_color='primary'
-          button_size='medium'
+          button_size='large'
           padding='regular'
           overlay_strength='medium'
           info_position='bottom'  
