@@ -24,14 +24,9 @@ function Project(props) {
                 </p>
               </div>
               
-              <MenuButton 
-                buttonText='View site'
-                href="/"
-                style={{
-                  buttonColor: button_color,
-                  buttonSize: button_size,
-                }}                       
-              />
+              <button className={`menu-button menu-button--${ button_color } menu-button--${ button_size || 'medium' }`}>
+                Visit site                
+              </button>
             </div>
           </div>
         </div>
