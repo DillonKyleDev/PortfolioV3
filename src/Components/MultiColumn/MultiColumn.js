@@ -33,7 +33,7 @@ export function ProjectCard(props) {
     image,
     title,
     description,
-    liveSiteLink
+    // liveSiteLink
   } = props;
   
   return (
