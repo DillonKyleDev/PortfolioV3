@@ -7,7 +7,7 @@ function HeroContainer() {
   return (
     <div className='hero-container'>
       <div className='hero-container__photo-container'>       
-        <img className='hero-container__photo' src={ profilePicture }/>       
+        <img className='hero-container__photo' alt='Dillon Kyle and partner' src={ profilePicture }/>       
       </div>
 
       <div className='hero-container__introduction'>      

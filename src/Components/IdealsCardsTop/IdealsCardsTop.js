@@ -56,12 +56,3 @@ function IdealsCardsTop() {
 }
 
 export default IdealsCardsTop
-
-
-                  // <p>
-                  //   I use tools like <a className="about-link" href="https://chrome.google.com/webstore/detail/access-assistant/ojiighldhdmahfdnhfdebnpmlbiemdfm" target="_blank" rel="noreferrer" alt="Chrome Accessabilty Assistant">
-                  //     Chrome Access Assistant
-                  //   </a> and <a className="about-link" href="https://color.a11y.com/?wc3" target="_blank" rel="noreferrer" alt="Color a11y">
-                  //     color.a11y.com
-                  //   </a> to ensure my projects are easy to use for everyone.
-                  // </p>

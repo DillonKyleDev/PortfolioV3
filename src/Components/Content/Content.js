@@ -10,7 +10,6 @@ import IdealsCardsTop from '../IdealsCardsTop/IdealsCardsTop';
 import IdealsCardsBottom from '../IdealsCardsBottom/IdealsCardsBottom';
 import IdealsCardsFinal from '../IdealsCardsFinal/IdealsCardsFinal';
 import MultiColumn, { ProjectCard } from '../MultiColumn/MultiColumn';
-import Project from '../Project/Project';
 
 import { Beck } from '../ProjectImports/ProjectImports'
 

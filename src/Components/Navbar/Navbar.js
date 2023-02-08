@@ -1,12 +1,10 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './_navbar.scss';
 import MenuButton from '../MenuButton/MenuButton';
 import { IoRocketSharp } from 'react-icons/io5';
 
 
 function Navbar() {
-  const [ selected, setSelected ] = useState('top');
-
   return (
       <div className='navbar'>
         <a className='navbar__logo' href="#top">

@@ -10,7 +10,7 @@ function Project(props) {
     <div className={`project__padding project__padding--${ padding } project__card-radius--${ card_radius }`}>
       <a className='project__container'  href={ liveSiteLink }>
         <div className='project__photo'>
-          <img src={ image } />
+          <img src={ image }  alt={ title }/>
           <div className={`project__overlay project__overlay--${ overlay_strength }`}></div>
           
           <div className='project__info'>
@@ -26,7 +26,7 @@ function Project(props) {
               
               <MenuButton 
                 buttonText='View site'
-                href=''
+                href="javascript:;"
                 style={{
                   buttonColor: button_color,
                   buttonSize: button_size,

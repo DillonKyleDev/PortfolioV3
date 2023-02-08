@@ -41,7 +41,7 @@ export function ProjectCard(props) {
       <div className='project-card'>
         { image && 
           <div className='project-card__image'>
-            <img src={ image } />          
+            <img src={ image }  alt={ title }/>          
             <div className='project-card__image-overlay'></div>
             <div className='project-card__image-glare'></div>
           </div>
@@ -57,7 +57,7 @@ export function ProjectCard(props) {
 
           <div className='project-card__text--bottom'>
             <MenuButton buttonText='View Site' 
-              href=''
+              href="javascript:;"
               style={{
                 buttonColor: 'primary',
                 buttonSize: 'small'
