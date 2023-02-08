@@ -21,9 +21,10 @@ function Footer() {
               className="footer-icon"/>
             </a>
           </p>
-          <p>
-            DK Web Solutions<span class="material-symbols-sharp copyright-symbol">copyright</span> 2021 - 2023</p>
-          <p className='year'></p>
+          <div className='footer__copyright'>
+            <p>DK Web Solutions<span class="material-symbols-sharp copyright-symbol">copyright</span></p>   
+            <p>2021 - 2023</p>       
+          </div>
           <p className='small-text'>Made with React.</p>
           <div className='footer-bar'></div>
         </div>
