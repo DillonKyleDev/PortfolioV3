@@ -1,7 +1,7 @@
 import React from 'react';
 import './_project.scss';
 
-import MenuButton from '../MenuButton/MenuButton';
+// import MenuButton from '../MenuButton/MenuButton';
 
 function Project(props) {
   const { image, title, description, liveSiteLink, padding, button_color, button_size, overlay_strength, info_position, card_radius } = props;
