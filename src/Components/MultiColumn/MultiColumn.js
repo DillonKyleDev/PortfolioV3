@@ -37,7 +37,7 @@ export function ProjectCard(props) {
   } = props;
   
   return (
-    <a className='project-card-spacing' herf={ liveSiteLink }>
+    <button className='project-card-spacing'>
       <div className='project-card'>
         { image && 
           <div className='project-card__image'>
@@ -66,7 +66,7 @@ export function ProjectCard(props) {
           </div>
         </div>        
       </div>
-    </a>
+    </button>
   )
 }
 
