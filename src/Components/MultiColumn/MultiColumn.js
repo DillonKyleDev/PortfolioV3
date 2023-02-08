@@ -56,13 +56,9 @@ export function ProjectCard(props) {
           </div>
 
           <div className='project-card__text--bottom'>
-            <MenuButton buttonText='Visit Site' 
-              href="/"
-              style={{
-                buttonColor: 'primary',
-                buttonSize: 'small'
-              }}              
-            />  
+            <button className="menu-button menu-button--primary menu-button--small">
+              Visit site                
+            </button>
           </div>
         </div>        
       </div>
