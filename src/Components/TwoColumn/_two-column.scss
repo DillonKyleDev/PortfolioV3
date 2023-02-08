@@ -4,12 +4,23 @@
   display: flex;
   flex-direction: column;
   justify-content: stretch;
-  row-gap: $padding--xs;
+  row-gap: $padding--small;    
+
+  &__column {
+    position: relative;  
+    width: 100%;   
+  }
 
   @media (min-width: $viewport-laptop--min) {
     flex-direction: row;
-    row-gap: $padding--small;    
+    column-count: 1;
 
+    &__column { 
+      width: 50%;
+    }
+  }
+
+  @media (min-width: $viewport-tablet--min) {
     // Spacing
 
     &--spacing-xxs {
@@ -29,6 +40,50 @@
     }
 
     &--spacing-large {
+      column-gap: $padding--xs;
+    }
+
+    &--spacing-xl {
+      column-gap: $padding--small;
+    }
+
+    &--spacing-xxl {
+      column-gap: $padding--small;
+    }
+
+    &--spacing-xxxl {
+      column-gap: $padding--small;
+    }
+  }
+
+  @media (min-width: $viewport-laptop--min) {
+    // Spacing
+
+    &--spacing-large {
+      column-gap: $padding--small;
+    }
+
+    &--spacing-xl {
+      column-gap: $padding--small;
+    }
+
+    &--spacing-xxl {
+      column-gap: $padding--small;
+    }
+
+    &--spacing-xxxl {
+      column-gap: $padding--small;
+    }
+  }
+
+    @media (min-width: $viewport-hd--min) {
+    // Spacing
+
+    &--spacing-medium {
+      column-gap: $padding--medium;
+    }
+
+    &--spacing-large {
       column-gap: $padding--large;
     }
 
@@ -42,11 +97,6 @@
 
     &--spacing-xxxl {
       column-gap: $padding--xxxl;
-    }
-
-    &__column {
-      position: relative;      
-      width: 50%;
     }
   }
 

@@ -22,7 +22,17 @@
 
   &__introduction {
     h1 {
-      font-size: 66px;
+      @media (min-width: 500px) {
+        font-size: 42px;
+      }
+
+      @media (min-width: $viewport-tablet--min) {
+        font-size: 54px;
+      }
+
+      @media (min-width: $viewport-laptop--min) {
+        font-size: 66px;
+      }
     }
   }
 }

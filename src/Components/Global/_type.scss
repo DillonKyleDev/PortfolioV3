@@ -30,8 +30,16 @@
 }
 
 .display--2 {
-  font-size: 48px;
+  font-size: 32px;
   margin-bottom: $padding--xxs;
+
+  @media (min-width: $viewport-tablet--min) {
+    font-size: 40px;
+  }
+
+  @media (min-width: $viewport-hd--min) {
+    font-size: 48px;
+  }
 }
 
 .display--3 {
