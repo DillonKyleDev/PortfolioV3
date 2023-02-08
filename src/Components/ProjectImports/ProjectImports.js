@@ -11,12 +11,12 @@ export const Beck =
   title='Beck Technology'
   description='A full build from the ground up in Hubspot.'
   tags={['']}
-  liveSiteLink='beck-technology.com'/>
+  liveSiteLink='#'/>
 export const Frangrowth = 
 <Project 
   image={ frangrowth }
   title='Frangrowth'
-  description='A rebranding for Frangrowth and a jump start to their SEO.'
+  description='A full build from the ground up in Hubspot.'
   tags={['']}
-  liveSiteLink='https://www.frangrowth.co/' />
+  liveSiteLink='#' />
 
