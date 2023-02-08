@@ -26,7 +26,7 @@ function Project(props) {
               
               <MenuButton 
                 buttonText='View site'
-                // href="/"
+                href="/"
                 style={{
                   buttonColor: button_color,
                   buttonSize: button_size,

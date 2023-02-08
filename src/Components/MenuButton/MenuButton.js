@@ -5,7 +5,7 @@ import { FiArrowRight } from 'react-icons/fi'
 function MenuButton(props) {
     const { 
       buttonText,
-      // href,
+      href,
       style={
         buttonColor: 'light',
         buttonSize: 'medium',
@@ -14,10 +14,10 @@ function MenuButton(props) {
     } = props;
 
   return (
-    <button className={`menu-button menu-button--${ style.buttonColor } menu-button--${ style.buttonSize || 'medium' }`}>
+    <a href={`${ href }`} className={`menu-button menu-button--${ style.buttonColor } menu-button--${ style.buttonSize || 'medium' }`}>
       { buttonText }
       { icon === 'arrow' && <FiArrowRight /> }
-    </button>
+    </a>
   )
 }
 
