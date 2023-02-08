@@ -57,7 +57,7 @@ export function ProjectCard(props) {
 
           <div className='project-card__text--bottom'>
             <MenuButton buttonText='View Site' 
-              href="javascript:;"
+              href="/"
               style={{
                 buttonColor: 'primary',
                 buttonSize: 'small'
