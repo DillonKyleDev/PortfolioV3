@@ -26,7 +26,7 @@ const Content = () => {
           text_color: 'on-light',
           constrain: 'xxl',
           top_padding: 'xxl',
-          bottom_padding: 'large',
+          bottom_padding: 'xxl',
           background_color: 'transparent',
           show_background_svg_: true,
           svg_color: 'secondary-light',
