@@ -4,7 +4,7 @@ import MultiColumn, { IconCard } from '../MultiColumn/MultiColumn';
 import TwoColumn from '../TwoColumn/TwoColumn';
 import Project from '../Project/Project';
 
-import { Beck } from '../ProjectImports/ProjectImports'
+import { Mazevo } from '../ProjectImports/ProjectImports'
 
 
 function IdealsCardsTop() {
@@ -32,10 +32,10 @@ function IdealsCardsTop() {
         />
         ,
         <Project 
-          image={ Beck.props.image }
-          title={ Beck.props.title }
-          description={ Beck.props.description }
-          liveSiteLink={ Beck.props.liveSiteLink }
+          image={ Mazevo.props.image }
+          title={ Mazevo.props.title }
+          description={ Mazevo.props.description }
+          liveSiteLink={ Mazevo.props.liveSiteLink }
           button_color='primary'
           button_size='large'          
           padding='regular'

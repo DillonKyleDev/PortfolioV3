@@ -11,7 +11,7 @@ import IdealsCardsBottom from '../IdealsCardsBottom/IdealsCardsBottom';
 import IdealsCardsFinal from '../IdealsCardsFinal/IdealsCardsFinal';
 import MultiColumn, { ProjectCard } from '../MultiColumn/MultiColumn';
 
-import { Beck } from '../ProjectImports/ProjectImports'
+import { Hagerman, Mazevo, Frangrowth, Beck } from '../ProjectImports/ProjectImports'
 
 
 const Content = () => {
@@ -126,22 +126,22 @@ const Content = () => {
         content={<MultiColumn 
           columns={[
             <ProjectCard
-              image={ Beck.props.image }
-              title={ Beck.props.title }
-              description={ Beck.props.description }
-              liveSiteLink={ Beck.props.liveSiteLink }
+              image={ Hagerman.props.image }
+              title={ Hagerman.props.title }
+              description={ Hagerman.props.description }
+              liveSiteLink={ Hagerman.props.liveSiteLink }
             />,
             <ProjectCard 
-              image={ Beck.props.image }
-              title={ Beck.props.title }
-              description={ Beck.props.description }
-              liveSiteLink={ Beck.props.liveSiteLink }      
+              image={ Mazevo.props.image }
+              title={ Mazevo.props.title }
+              description={ Mazevo.props.description }
+              liveSiteLink={ Mazevo.props.liveSiteLink }      
             />,
             <ProjectCard 
-              image={ Beck.props.image }
-              title={ Beck.props.title }
-              description={ Beck.props.description }
-              liveSiteLink={ Beck.props.liveSiteLink }       
+              image={ Frangrowth.props.image }
+              title={ Frangrowth.props.title }
+              description={ Frangrowth.props.description }
+              liveSiteLink={ Frangrowth.props.liveSiteLink }       
             />,
             <ProjectCard 
               image={ Beck.props.image }

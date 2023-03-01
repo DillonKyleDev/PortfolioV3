@@ -45,7 +45,7 @@
   }
 
   &--spacing-xxs {  
-    > div, a {
+    > div {
       padding: 10px
     }
   }
@@ -125,7 +125,7 @@
     display: flex;
   }
 
-  // border: solid 1px $secondary--dark;  
+  //border: solid 1px $secondary--dark;  
   background-color: white;      
   border-radius: 3px;
   overflow: hidden;
@@ -148,8 +148,9 @@
   }
 
   &__title {
-    margin-bottom: $padding--xxxs;
+    margin-bottom: 15px;
     color: $primary !important;
+    text-decoration: underline $primary;
   }
 
   &__text {
@@ -167,7 +168,7 @@
   border-radius: 3px;
   overflow: hidden;
   box-shadow: $shadow--level-4;
-  transition: box-shadow 0.3s, transform 0.3s;  
+  transition: box-shadow 0.25s, transform 0.25s;  
   flex: 1;
 
   &:hover {

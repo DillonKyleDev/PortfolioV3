@@ -33,12 +33,12 @@ export function ProjectCard(props) {
     image,
     title,
     description,
-    // liveSiteLink
+    liveSiteLink
   } = props;
   
   return (
     <div className='project-card-spacing'>
-      <div className='project-card'>
+      <a className='project-card' href={ liveSiteLink } alt={ title } target='_blank'>
         { image && 
           <div className='project-card__image'>
             <img src={ image }  alt={ title }/>          
@@ -61,7 +61,7 @@ export function ProjectCard(props) {
             </button>
           </div>
         </div>        
-      </div>
+      </a>
     </div>
   )
 }

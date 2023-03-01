@@ -4,7 +4,7 @@ import MultiColumn, { IconCard } from '../MultiColumn/MultiColumn';
 import TwoColumn from '../TwoColumn/TwoColumn';
 import Project from '../Project/Project';
 
-import { Frangrowth } from '../ProjectImports/ProjectImports'
+import { Hagerman } from '../ProjectImports/ProjectImports'
 
 export function IdealsCard(props) {
   const {
@@ -33,10 +33,10 @@ function IdealsCardsBottom() {
     <div className='ideals-cards'>
       <TwoColumn columns={[         
         <Project 
-          image={ Frangrowth.props.image }
-          title={ Frangrowth.props.title }
-          description={ Frangrowth.props.description }
-          liveSiteLink={ Frangrowth.props.liveSiteLink }
+          image={ Hagerman.props.image }
+          title={ Hagerman.props.title }
+          description={ Hagerman.props.description }
+          liveSiteLink={ Hagerman.props.liveSiteLink }
           button_color='primary'
           button_size='large'
           padding='regular'
