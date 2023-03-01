@@ -8,7 +8,7 @@ function Project(props) {
   
   return (
     <div className={`project__padding project__padding--${ padding } project__card-radius--${ card_radius }`}>
-      <a className='project__container'  href={ liveSiteLink } target='_blank'>
+      <a className='project__container'  href={ liveSiteLink } target='_blank' rel='noreferrer'>
         <div className='project__photo'>
           <img src={ image }  alt={ title }/>
           <div className={`project__overlay project__overlay--${ overlay_strength }`}></div>

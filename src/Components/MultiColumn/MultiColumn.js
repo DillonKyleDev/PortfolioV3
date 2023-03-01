@@ -38,7 +38,7 @@ export function ProjectCard(props) {
   
   return (
     <div className='project-card-spacing'>
-      <a className='project-card' href={ liveSiteLink } alt={ title } target='_blank'>
+      <a className='project-card' href={ liveSiteLink } alt={ title } target='_blank' rel='noreferrer'>
         { image && 
           <div className='project-card__image'>
             <img src={ image }  alt={ title }/>          
