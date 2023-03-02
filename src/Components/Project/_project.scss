@@ -9,7 +9,7 @@
   &__photo {     
     position: relative;
     width: 100%;
-    padding-bottom: 66%;
+    padding-bottom: 70%;
     box-shadow: $shadow--level-4;
     overflow: hidden;
     border: none;
@@ -114,10 +114,11 @@
       .project__info--bottom,
       .project__info--top,
       .project__info--between {
-        row-gap: $padding--xxs;
+        row-gap: $padding--xxxs;
         padding: $padding--xxs;
 
         @media (min-width: $viewport-tablet--min) {
+          row-gap: $padding--xxs;
           padding: $padding--xxs;
         }
       }

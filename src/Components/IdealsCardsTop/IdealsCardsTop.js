@@ -45,7 +45,7 @@ function IdealsCardsTop() {
         />
       ]} 
       column_gap='large'
-      vertical_align='top'
+      vertical_align='stretch'
       show_first_bg_card_={ true }
       first_bg_card_color='secondary-light'
       show_second_bg_card_={ false }

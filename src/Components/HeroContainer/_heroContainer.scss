@@ -27,13 +27,14 @@
       }
 
       .hero-container__subtext {
-        font-size: 26px;        
+        font-size: 26px;     
       }
     }
 
     h1 {
       @media (min-width: 500px) {
         font-size: 42px;
+        margin-bottom: 20px;
       }
 
       @media (min-width: $viewport-tablet--min) {
@@ -43,6 +44,12 @@
       @media (min-width: $viewport-laptop--min) {
         font-size: 66px;
       }
+    }
+
+    .hero-container__subtext {
+      @media (min-width: 500px) {         
+        margin-bottom: 30px; 
+      }  
     }
   }
 }
