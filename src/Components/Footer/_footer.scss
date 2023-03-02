@@ -33,7 +33,8 @@
 
 .small-text {
   margin-top: $padding--xxxs;
-  font-size: 0.85rem;  
+  font-size: 12px !important;  
+  white-space: nowrap;
 }
 
 .footer-bar {
