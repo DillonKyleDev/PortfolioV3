@@ -140,7 +140,11 @@ p {
   color: $body-text;
 
   &.large {
-    font-size: 20px;
-    line-height: 1.8;
+    font-size: 20px !important;
+    line-height: 1.4;
+
+    @media (min-width: $viewport-tablet--min) {      
+      line-height: 1.8;
+    }
   }
 }
