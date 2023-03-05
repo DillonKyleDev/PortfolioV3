@@ -31,6 +31,10 @@
       }
     }
 
+    @media (min-width: $viewport-tablet--min) {
+      margin-bottom: $padding--xs;
+    }
+
     h1 {
       @media (min-width: 500px) {
         font-size: 42px;
