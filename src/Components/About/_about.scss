@@ -15,13 +15,13 @@
   }
 
   .hubspot {
-    color: 	$primary;
+    color: 	$primary--light;
     text-decoration: underline;
     transition: text-decoration-color 0.15s;
     text-decoration-color: transparent;
 
     &:hover {
-      text-decoration-color: $primary;
+      text-decoration-color: $primary--light;
     }
   }
 }

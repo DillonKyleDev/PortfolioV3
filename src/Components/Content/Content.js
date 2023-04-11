@@ -13,6 +13,11 @@ import MultiColumn, { ProjectCard } from '../MultiColumn/MultiColumn';
 
 import { Hagerman, Mazevo, Frangrowth, Beck } from '../ProjectImports/ProjectImports'
 
+import hagermanMobile from '../../assets/projects/mobile/hagerman.png';
+import mazevoMobile from '../../assets/projects/mobile/mazevo.png';
+import beckMobile from '../../assets/projects/mobile/beck.png';
+import frangrowthMobile from '../../assets/projects/mobile/frangrowth.png';
+
 
 const Content = () => {
   return (
@@ -126,25 +131,25 @@ const Content = () => {
         content={<MultiColumn 
           columns={[
             <ProjectCard
-              image={ Hagerman.props.image }
+              image={ hagermanMobile }
               title={ Hagerman.props.title }
               description={ Hagerman.props.description }
               liveSiteLink={ Hagerman.props.liveSiteLink }
             />,
             <ProjectCard 
-              image={ Mazevo.props.image }
+              image={ mazevoMobile }
               title={ Mazevo.props.title }
               description={ Mazevo.props.description }
               liveSiteLink={ Mazevo.props.liveSiteLink }      
             />,
             <ProjectCard 
-              image={ Frangrowth.props.image }
+              image={ frangrowthMobile }
               title={ Frangrowth.props.title }
               description={ Frangrowth.props.description }
               liveSiteLink={ Frangrowth.props.liveSiteLink }       
             />,
             <ProjectCard 
-              image={ Beck.props.image }
+              image={ beckMobile }
               title={ Beck.props.title }
               description={ Beck.props.description }
               liveSiteLink={ Beck.props.liveSiteLink }       
