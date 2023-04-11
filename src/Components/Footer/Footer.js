@@ -9,24 +9,28 @@ function Footer() {
     <div>
       <div className='footer'>
         <div className='footer-content'>
-          <p>
+          <p className='footer-links'>
             <a href="https://github.com/DillonKyleDev" className="footer-link" target="_blank" rel="noreferrer" alt="GitHub Profile">
               <BsGithub  
               size={30} 
               className="footer-icon"/>
+              Github
             </a>
             <a href="https://www.linkedin.com/in/dillon-kyle-387700213/" className="footer-link" target="_blank" rel="noreferrer" alt="LinkedIn Profile">
               <AiFillLinkedin 
               size={30}
               className="footer-icon"/>
+              LinkedIn
             </a>
           </p>
+
+          <div className='footer-bar'></div>
+
           <div className='footer__copyright'>
             <p>DK Web Solutions<span class="material-symbols-sharp copyright-symbol">copyright</span></p>   
             <p>2021 - 2023</p>       
           </div>
           <p className='small-text'>Made with React.</p>
-          <div className='footer-bar'></div>
         </div>
       </div>
     </div>
