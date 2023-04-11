@@ -16,7 +16,7 @@ function Footer() {
               className="footer-icon"/>
               Github
             </a>
-            <a href="https://www.linkedin.com/in/dillon-kyle-387700213/" className="footer-link" target="_blank" rel="noreferrer" alt="LinkedIn Profile">
+            <a href="https://www.linkedin.com/in/dillon-k-387700213/" className="footer-link" target="_blank" rel="noreferrer" alt="LinkedIn Profile">
               <AiFillLinkedin 
               size={30}
               className="footer-icon"/>
