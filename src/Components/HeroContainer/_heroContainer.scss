@@ -13,16 +13,6 @@
       width: 270px;
       height: 270px;
     }
-
-    img {
-      width: 200px;
-      height: auto;
-
-      @media (min-width: $viewport-tablet--min) {
-        width: 270px;
-        height: auto;
-      }
-    }
   }
 
   &__photo {    
