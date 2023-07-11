@@ -121,7 +121,7 @@ const Content = () => {
         sectionHeader={
           <div>
             <h2 className='display--2'>
-              Previous Works
+              Previous Work.
             </h2>
             <p className='large'>
               Here are a few of my favorite website builds. All developed from the ground up in HubSpot.
