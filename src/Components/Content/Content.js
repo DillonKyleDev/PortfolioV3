@@ -121,10 +121,10 @@ const Content = () => {
         sectionHeader={
           <div>
             <h2 className='display--2'>
-              Convinced yet?
+              Previous Works
             </h2>
             <p className='large'>
-              Well don't take my word for it. Here are a few of my favorites. Let them do the talking.
+              Here are a few of my favorite website builds. All developed from the ground up in HubSpot.
             </p>
           </div>
         }
